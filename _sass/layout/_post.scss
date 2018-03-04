@@ -29,23 +29,24 @@
     margin: map-get($base, vertical-space-large) * 2 0 map-get($base, vertical-space-large) 0;
     padding-top: map-get($base, vertical-space-large) / 2;
     @include split-line(top, 4px);
-    & > .article-previous, & > .article-next {
+    &>.article-previous,
+    &>.article-next {
       box-sizing: border-box;
       width: 50%;
-      & > span {
+      &>span {
         font-weight: map-get($base, font-weight-bold);
         color: $text-color-l;
       }
-      & > a{
+      &>a {
         display: block;
         @include link-text-colors($text-color, $main-color-1, $main-color-1);
       }
     }
-    & > .article-previous {
+    &>.article-previous {
       float: left;
       padding-right: .5rem;
     }
-    & > .article-next {
+    &>.article-next {
       float: right;
       padding-left: .5rem;
       text-align: right;
@@ -78,3 +79,8 @@
     }
   }
 }
+
+.center-image {
+  margin: 0 auto;
+  display: block;
+} //customise

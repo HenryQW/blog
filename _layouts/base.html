@@ -25,6 +25,11 @@
     {%- elsif page.layout == "post" -%}
       {%- include scripts/page-post.html -%}
       {%- include scripts/post.html -%}
+    <!-- customise --> 
+    {%- elsif page.layout == "resume" -%}
+      {%- include scripts/page-post.html -%}
+      {%- include scripts/post.html -%}
+    <!-- customise --> 
     {%- elsif page.layout == "all" -%}
       {%- include scripts/all.html -%}
     {%- endif -%}

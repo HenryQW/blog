@@ -1,15 +1,23 @@
 language: ruby
 rvm:
-  - 2.4.0
+- 2.4.0
 branches:
   only:
-  - master
-script: JEKYLL_ENV=production bundle exec jekyll build --config ./_config.demo.yml
+  - custom
+notifications:
+  email:
+    recipients:
+      - henry@wangqiru.com
+    on_success: never
+script: JEKYLL_ENV=production bundle exec jekyll build --config ./_config.yml
 deploy:
   provider: pages
-  skip_cleanup: true
   github_token: $GITHUB_TOKEN
+  skip_cleanup: true
   local_dir: _site
   on:
-    branch: master
-    target_branch: gh-pages
+    branch: custom
+after_deploy:
+  - "curl -o /tmp/travis-merge-gh-pages https://raw.githubusercontent.com/WangQiru/travis-merger/master/travis-merge-gh-pages"
+  - "chmod a+x /tmp/travis-merge-gh-pages"
+  - "BRANCH_TO_MERGE=gh-pages BRANCH_TO_MERGE_INTO=master GITHUB_REPO=WangQiru/wangqiru.github.io /tmp/travis-merge-gh-pages"

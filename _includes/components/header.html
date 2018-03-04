@@ -1,7 +1,10 @@
 <header class="m-page-header">
   <div class="main clearfix">
     <div class='site-logo'>
-    {%- include logo/logo.svg -%}
+    <!-- customise -->
+    {%- assign __path = '/assets/images/logo/apple-icon.png' -%} {% include snippets/prepend-baseurl.html %}
+    <img src="{{ __return }}" alt="Logo" height="65%"> 
+    <!-- customise --> 
     {%- assign __path = site.paths.base | default: site.data.variables.default.paths.base  -%}
     {%- include snippets/get-nav-url.html -%}
     {%- if site.title -%}

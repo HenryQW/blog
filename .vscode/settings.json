@@ -1,5 +1,7 @@
 {
   "editor.tabSize": 2,
+  "eslint.enable": false,
+  "editor.formatOnSave": false,
   "beautify.config": {
     "indent_size": 2
   },
@@ -7,4 +9,3 @@
     "*.html": "jekyll"
   }
 }
-
