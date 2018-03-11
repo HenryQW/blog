@@ -11,10 +11,13 @@ notifications:
     on_success: never
 script: JEKYLL_ENV=production bundle exec jekyll build --config ./_config.yml
 deploy:
+  edge:
+    branch: v1.8.47
   provider: pages
   github_token: $GITHUB_TOKEN
   skip_cleanup: true
   local_dir: _site
+  keep-history: true
   on:
     branch: custom
 after_deploy:
