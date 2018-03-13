@@ -13,18 +13,18 @@ A quick fix for ASP.NET Core Scaffolding Bug for separated DbContext & Model.
 Project structure:
 {% highlight raw%}
 ├── Solution
-  ├── BL
-  │ ├── Database
-  │ │ └── DbContext
-  ├── Core
-  │ ├── Models
-  │ │ ├──ApplicationInfo
-  │ │ ├── VersionInfo
-  │ │ └── ApplicationInfo
-  ├── WebApp
-  │ ├── Controllers
-  │ │ └── ApplicationInfoesController
-  │ …
+│   └── BL
+│   │   ├── Database
+│   │   └── DbContext
+│   └──Core
+│   │   └── Models
+│   │       ├──ApplicationInfo
+│   │       ├── VersionInfo
+│   │       └── ApplicationInfo
+│   └── WebApp
+│   │   └── Controllers
+│   │       └── ApplicationInfoesController
+│ …
 {% endhighlight %}
 
 When `DbContext` and `Models` are placed in separated projects from the main `WebApplication`, like the one above, Scaffolding will prompt the following error:
