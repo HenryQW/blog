@@ -2,7 +2,7 @@
 layout: post
 key: 20180313
 modify_date: 2018-03-13
-tags: [Node, Docker]
+tags: [Node, Docker, English]
 title: Phantomjs for npm in alpine-based docker image
 ---
 
