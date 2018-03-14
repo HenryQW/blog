@@ -1,12 +1,14 @@
 ---
 layout: post
 key: 20180309
-modify_date: 2018-03-09
+modify_date: 2018-03-14
 tags: [Node, Let's Encrypt, RSS, Nginx, Docker, 中文]
 title: 记录学习使用 Node 搭建 API 服务器的路程
 ---
 
 很早就在拜读[湾区日报]( [https://wanqu.co/b/7/2015-05-24-behind-the-scenes.html](https://wanqu.co/b/7/2015-05-24-behind-the-scenes.html) )，觉得分享的内容与点评都很赞，而且这个分享模式非常简单高效。但对于我来说，唯一缺点是原文不是全文输出，需要跳转到外部继续阅读，打破了在一个 app 里阅读所有内容的习惯。 现在我的另一半也被我安利上了用 RSS 刷新闻，决定借此机会打造一个类似的服务，用于分享新闻。
+
+![Mindmap](/assets/images/2018-03-09/mindmap.png)
 
 <!--more-->
 
@@ -49,6 +51,30 @@ Node express 号称可以在 10 分钟内搭建出一个 RESTful API server，�
 
 ### Deployment
 Docker 毫不犹豫。
+
+Production 版本可以加入现有的 compose，做到 VPS 拎包入住，打包即走。
+
+{% highlight yml %}
+version: "3"  
+services:
+    postgres:
+      image: sameersbn/postgresql:latest
+
+    ttrss:
+      image: wangqiru/ttrss
+      
+    huginn:
+      image: huginn/huginn:latest
+          
+    aria2:
+      image: wangqiru/aria2-with-ariang:latest
+    
+    filemanager:
+      image: hacdias/filemanager:latest
+
+    squid:
+      image: sameersbn/squid:3.3.8-23
+{% endhighlight %}
 
 部署过程中遇到了 npm phantomjs-prebuilt 无法在 alpine 下编译的问题，[解决方法]({% post_url 2018-03-13-phantomjs-for-npm-on-alpine %})。
 
