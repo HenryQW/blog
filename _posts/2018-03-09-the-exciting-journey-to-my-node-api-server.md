@@ -50,6 +50,8 @@ Node express 号称可以在 10 分钟内搭建出一个 RESTful API server，�
 ### Deployment
 Docker 毫不犹豫。
 
+部署过程中遇到了 npm phantomjs-prebuilt 无法在 alpine 下编译的问题，[解决方法]({% post_url 2018-03-13-phantomjs-for-npm-on-alpine %})。
+
 ### Documentation
 曾有使用 [jsdoc](http://usejsdoc.org/) 的经验，等到某一个稳定的版本后开始增加文档。
 
