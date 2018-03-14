@@ -36,7 +36,7 @@ author:
   email:  henry@wangqiru.com
   # facebook:  #your Facebook username
   # twitter:  #your Twitter username
-  github:  HenryQiruWang
+  github:  HenryQW
   # googleplus:  #your Google+ username
   # weibo:  #your Weibo username
   # douban:  #your Douban username
@@ -62,9 +62,9 @@ leancloud:
 gitalk:
   clientID: 583d71112097971f54a3
   clientSecret: e288a7631c207c6a83b16c81c0f14658c6304a3c
-  repository: henryqiruwang.github.io
-  owner: HenryQiruWang
-  admin: HenryQiruWang
+  repository: HenryQW.github.io
+  owner: HenryQW
+  admin: HenryQW
 
   # please refer to https://github.com/gitalk/gitalk for more info.
 
