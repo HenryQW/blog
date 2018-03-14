@@ -21,6 +21,6 @@ deploy:
   on:
     branch: custom
 after_deploy:
-  - "curl -o /tmp/travis-merge-gh-pages https://raw.githubusercontent.com/WangQiru/travis-merger/master/travis-merge-gh-pages"
+  - "curl -o /tmp/travis-merge-gh-pages https://raw.githubusercontent.com/HenryQW/travis-merger/master/travis-merge-gh-pages"
   - "chmod a+x /tmp/travis-merge-gh-pages"
-  - "BRANCH_TO_MERGE=gh-pages BRANCH_TO_MERGE_INTO=master GITHUB_REPO=WangQiru/wangqiru.github.io /tmp/travis-merge-gh-pages"
+  - "BRANCH_TO_MERGE=gh-pages BRANCH_TO_MERGE_INTO=master GITHUB_REPO=HenryQW/HenryQW.github.io /tmp/travis-merge-gh-pages"
