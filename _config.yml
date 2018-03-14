@@ -75,7 +75,7 @@ gitalk:
 
 ## Paginate ##
 paginate: 7
-paginate_path: /blog/page:num
+paginate_path: /page/:num/
 
 ## Post excerpts ##
 excerpt_separator: <!--more-->
