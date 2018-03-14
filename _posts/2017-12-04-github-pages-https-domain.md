@@ -17,7 +17,7 @@ Instead of using CNAME as suggested by [GitHub Help](https://help.github.com/art
 {% highlight Nginx %}
 
 location / {
-	proxy_pass https://wangqiru.github.io;
+	proxy_pass https://HenryQiruWang.github.io;
 }
 {% endhighlight %}
 
@@ -47,7 +47,7 @@ server {
 	ssl_certificate_key /etc/letsencrypt/live/rss.wangqiru.com/privkey.pem;
 
 	location / {
-        proxy_pass https://wangqiru.github.io;
+        proxy_pass https://HenryQiruWang.github.io;
 	}
 }
 {% endhighlight %}
