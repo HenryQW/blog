@@ -62,13 +62,13 @@ services:
 
     ttrss:
       image: wangqiru/ttrss
-      
+
     huginn:
       image: huginn/huginn:latest
-          
+
     aria2:
       image: wangqiru/aria2-with-ariang:latest
-    
+
     filemanager:
       image: hacdias/filemanager:latest
 
@@ -76,7 +76,7 @@ services:
       image: sameersbn/squid:3.3.8-23
 {% endhighlight %}
 
-部署过程中遇到了 npm phantomjs-prebuilt 无法在 alpine 下编译的问题，[解决方法]({% post_url 2018-03-13-phantomjs-for-npm-on-alpine %})。
+部署过程中遇到了 npm `phantomjs-prebuilt` package 无法在 alpine 下编译的问题，[解决方法]({% post_url 2018-03-13-phantomjs-for-npm-on-alpine %})。
 
 ### Documentation
 曾有使用 [jsdoc](http://usejsdoc.org/) 的经验，等到某一个稳定的版本后开始增加文档。

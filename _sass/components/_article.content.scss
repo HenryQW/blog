@@ -93,7 +93,7 @@
       background-color: $text-background-color;
       &>code {
         display: block;
-        line-height: map-get($base, line-height);
+        line-height: map-get($base, line-height)*.7;
 
       }
     }
