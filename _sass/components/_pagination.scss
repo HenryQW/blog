@@ -19,11 +19,12 @@
 
   // customise
   @extend %grid-center;
+
+  p{
+    @extend %grid-center;
+  }
 }
 
-p{
-  @extend %grid-center;
-}
 
 %grid-center{
 display: grid;
