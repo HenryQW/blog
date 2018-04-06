@@ -1,10 +1,10 @@
 {
   "name": "jekyll-text-theme",
-  "version": "1.4.3",
+  "version": "1.5.0",
   "description": "A text first theme for Jekyll.",
   "scripts": {
     "build": "bundle exec jekyll build",
-    "serve": "bundle exec jekyll serve -H 0.0.0.0 --port 3000",
+    "serve": "bundle exec jekyll serve -H 0.0.0.0",
     "default": "bundle exec jekyll serve -H 0.0.0.0 -t",
     "dev": "bundle exec jekyll serve -H 0.0.0.0 -t --config ./_config.dev.yml",
     "demo": "bundle exec jekyll serve -H 0.0.0.0 -t --config ./_config.demo.yml",
@@ -31,6 +31,7 @@
   },
   "homepage": "https://github.com/kitian616#readme",
   "devDependencies": {
+    "eslint": "^4.19.1",
     "gulp": "^3.9.1",
     "gulp-rename": "^1.2.2",
     "gulp-svg2png": "^2.0.2",
