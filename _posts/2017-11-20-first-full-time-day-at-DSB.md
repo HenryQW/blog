@@ -10,21 +10,23 @@ title: First "full-time" day @ DSB
   display: grid;
   align-items: center;
   grid-gap: 5px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-areas:
-    'logo content content content';
+    'logo content content content content';
 }
 .grid-layout > div {
   padding: 5px;
 }
 .logo {
   grid-area: logo;
+  min-width: 68px;
+  height: auto;
 }
 .logo-content {
   grid-area: content;
 }
 </style>
-![Logo of Medical School, Swansea University](/assets/images/2017-11-20/Medical-School-Swansea-University.jpg){:.logo height="150px" width="150px" }
+![Logo of Medical School, Swansea University](/assets/images/2017-11-20/Medical-School-Swansea-University.jpg){:.logo height="120px" width="120px" }
 {:.rounded.shadow} 
 <div class="logo-content">
 Today marks the first day as a full-time staff of <i><b>Data Science, Medical School, Swansea University</b></i>, after a 3-month internship. 
@@ -55,5 +57,8 @@ The Penguin has joined the battle.
 }
 .evenly-distributed-children > p {
   padding:0 5px;
+}
+.evenly-distributed-children > p > img:not(.emoji) {
+  max-height: 37rem; 
 }
 </style>
