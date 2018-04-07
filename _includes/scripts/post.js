@@ -13,7 +13,7 @@
     var $col2 = $('.js-col-2');
     var toc, affix;
     var hasToc = $articleContent.find(TOC_SELECTOR).length > 0;
-    var tocDisabled = true;
+    var tocDisabled = false;
 
     function disabled() {
       return $col2.css('display') === 'none' || !hasToc;
@@ -21,7 +21,6 @@
 
     $window.on('resize', window.throttle(function() {
       tocDisabled = disabled();
-      console.log(tocDisabled);
       toc && toc.setOptions({
         disabled: tocDisabled
       });
@@ -33,13 +32,17 @@
     if (hasToc) {
       !$pageStage.hasClass('has-toc') && $pageStage.addClass('has-toc');
     }
+    tocDisabled = disabled();
+
     setTimeout(function() {
       toc = $toc.toc({
         selectors: TOC_SELECTOR,
-        container: $articleContent
+        container: $articleContent,
+        disabled: tocDisabled
       });
       affix = $articleAside.affix({
-        offsetBottom: $pageFooter.outerHeight()
+        offsetBottom: $pageFooter.outerHeight(),
+        disabled: tocDisabled
       });
     }, 1000);
   });
@@ -49,17 +52,19 @@
     LEANCLOUD.app_id &&
     LEANCLOUD.app_key &&
     LEANCLOUD.app_class &&
-    ENVIRONMENT !== 'development') {
+    '{{ page.key }}' &&
+    ENVIRONMENT !== 'development' &&
+    ENVIRONMENT !== 'beta'
+  ) {
       window.Lazyload.js([SOURCES.jquery, SOURCES.leancloud_js_sdk], function() {
-      var AV = window.AV;
-
+      /* global AV */
       var pageview = window.pageview(AV, {
         appId: LEANCLOUD.app_id,
         appKey: LEANCLOUD.app_key,
         appClass: LEANCLOUD.app_class
       });
       var key = '{{ page.key }}';
-      var title = window.decodeUrl('{{ page.title | url_encode }}');
+      var title = '{{ page.title }}';
 
       pageview.increase(key, title, function(view) {
         $('#post-key-{{ page.key }}').text(view);
