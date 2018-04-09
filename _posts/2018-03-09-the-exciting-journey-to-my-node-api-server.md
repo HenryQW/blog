@@ -30,7 +30,8 @@ title: 记录学习使用 Node 搭建 API 服务器的路程
 1. 学习使用 Node 的各种包搭建 API 服务器
 2. 学习 Node 下的单元测试
 3. 抓取分享链接的全文，通过 Huginn 输出 RSS
-4. TBA
+4. 基于 chartjs 的简单数据可视化，RSS 阅读量，huginn 工作量等
+5. All in one hub 式主页，聚合所有服务
 
 # Technology
 ### Framework 
@@ -79,7 +80,7 @@ services:
 部署过程中遇到了 npm `phantomjs-prebuilt` package 无法在 alpine 下编译的问题，[解决方法]({% post_url 2018-03-13-phantomjs-for-npm-on-alpine %})。
 
 ### Documentation
-曾有使用 [jsdoc](http://usejsdoc.org/) 的经验，等到某一个稳定的版本后开始增加文档。
+曾有使用 [jsdoc](http://usejsdoc.org/) 的经验，等到某一个稳定的版本后开始增加文档。同时寻找更优秀合适的替代品。
 
 
 
