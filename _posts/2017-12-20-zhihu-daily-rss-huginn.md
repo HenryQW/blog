@@ -6,13 +6,13 @@ tags: [Huginn, RSS, 知乎日报, 中文]
 title: 利用 Huginn 和知乎日报 API 制作全文 RSS
 ---
 
-Huginn 是北欧神话里，主神奥丁的一只乌鸦，每天乌鸦都会为奥丁获取全世界的新闻。 这也是基于 ruby 的 [Huginn](https://github.com/huginn/huginn) 所希望替用户做到的，在这个碎片化的时代替用户爬取和筛选任何互联网上信息。
+Huginn 是北欧神话里，主神奥丁的一只乌鸦，每天乌鸦都会为奥丁获取全世界的新闻。 这也是基于 ruby 的 [Huginn](https://github.com/huginn/huginn){:target="_blank"} 所希望替用户做到的，在这个碎片化的时代替用户爬取和筛选任何互联网上信息。
 
 利用 Huginn 和知乎日报 API 输出全文 RSS 以减少碎片化阅读。
 
 <!--more-->
 
-自从 Google Reader 关闭之后，RSS 已逐渐式微，但这不妨碍它成为一种高效获取信息的手段，RSS 没有推荐和评论等任何干扰性元素（吾之蜜糖彼之砒霜），信息来源掌握在用户自己手里。配合 [Tiny Tiny RSS](https://tt-rss.org/) ，所有文章通过 Reeder 阅读而不必在多个 XX 头条，XX News 和 XX 号之间切换以及忍受他们的启动广告。 RSS 已经成为了我获取每日信息的主要途径。
+自从 Google Reader 关闭之后，RSS 已逐渐式微，但这不妨碍它成为一种高效获取信息的手段，RSS 没有推荐和评论等任何干扰性元素（吾之蜜糖彼之砒霜），信息来源掌握在用户自己手里。配合 [Tiny Tiny RSS](https://tt-rss.org/){:target="_blank"} ，所有文章通过 Reeder 阅读而不必在多个 XX 头条，XX News 和 XX 号之间切换以及忍受他们的启动广告。 RSS 已经成为了我获取每日信息的主要途径。
 
 ![信息聚合flow](/assets/images/2017-12-21/flow.jpg){: .center-image} 
 
@@ -23,10 +23,10 @@ Huginn 是北欧神话里，主神奥丁的一只乌鸦，每天乌鸦都会为�
   - Flipboard
   - 希望稍后阅读的文章
 
-大多数主流媒体仍然提供 RSS 摘要作为引流途径，好在可以通过 [Mercury](https://mercury.postlight.com/web-parser/) 来获取文章全文（虽然开发者从不回复邮件），以省去每次跳转到网站的麻烦。
+大多数主流媒体仍然提供 RSS 摘要作为引流途径，好在可以通过 [Mercury](https://mercury.postlight.com/web-parser/){:target="_blank"} 来获取文章全文（虽然开发者从不回复邮件），以省去每次跳转到网站的麻烦。
 
 ## Website Agent 1 - 获取日报文章链接
-通过 [izzyleung 的逆向分析](https://github.com/izzyleung/ZhihuDailyPurify/wiki/%E7%9F%A5%E4%B9%8E%E6%97%A5%E6%8A%A5-API-%E5%88%86%E6%9E%90)所得出的知乎日报 API [https://news-at.zhihu.com/api/4/stories/latest](https://news-at.zhihu.com/api/4/stories/latest) ，用 Huginn 创建一个 `Website Agent` 来接收 API 返回的大爱 JSON 格式。
+通过 [izzyleung 的逆向分析](https://github.com/izzyleung/ZhihuDailyPurify/wiki/%E7%9F%A5%E4%B9%8E%E6%97%A5%E6%8A%A5-API-%E5%88%86%E6%9E%90){:target="_blank"}所得出的知乎日报 API [https://news-at.zhihu.com/api/4/stories/latest](https://news-at.zhihu.com/api/4/stories/latest){:target="_blank"} ，用 Huginn 创建一个 `Website Agent` 来接收 API 返回的大爱 JSON 格式。
 
 {% highlight JSON %}
 {
@@ -54,7 +54,7 @@ Huginn 是北欧神话里，主神奥丁的一只乌鸦，每天乌鸦都会为�
 - 在 `url` 中填入 API 地址
 - 在 `type` 中填入返回格式 `JSON`
 - 在 `mode` 中填入 `on_change` ，即只存储与上次事件不同的抓取结果
-- 在 `extract` 中填入我们要抓取的 JSON 键名 （ Huginn 支持 regex 正则式和 [Liquid](https://shopify.github.io/liquid/) ），这里抓取的是 `stories` 键下的每一个对象的 `id` 和 `title` ，**并将事件存储到 `id` 和 `title` 这两个变量中备用**。
+- 在 `extract` 中填入我们要抓取的 JSON 键名 （ Huginn 支持 regex 正则式和 [Liquid](https://shopify.github.io/liquid/){:target="_blank"} ），这里抓取的是 `stories` 键下的每一个对象的 `id` 和 `title` ，**并将事件存储到 `id` 和 `title` 这两个变量中备用**。
 
 
 ### 输出事件
@@ -65,7 +65,7 @@ id|title
 
 
 ## Website Agent 2 - 获取日报文章全文
-基于上一步的输出事件，ID 代表文章的唯一识别符，创建第二个 `Website Agent` 进一步通过 API [https://news-at.zhihu.com/api/4/news/9661975](https://news-at.zhihu.com/api/4/news/9661975) 可以获取 ID 为 9661975的全文 HTML。
+基于上一步的输出事件，ID 代表文章的唯一识别符，创建第二个 `Website Agent` 进一步通过 API [https://news-at.zhihu.com/api/4/news/9661975](https://news-at.zhihu.com/api/4/news/9661975){:target="_blank"} 可以获取 ID 为 9661975的全文 HTML。
 
 {% highlight JSON %}
 {
@@ -119,9 +119,9 @@ id|title|body|link
 ## 大功告成
 
 Huginn 会输出两个 RSS 源地址，分别为 XML 和 JSON 格式。
-- [https://bot.wangqiru.com/users/1/web_requests/92/知乎日报.xml](https://bot.wangqiru.com/users/1/web_requests/92/%E7%9F%A5%E4%B9%8E%E6%97%A5%E6%8A%A5.xml)
+- [https://bot.wangqiru.com/users/1/web_requests/92/知乎日报.xml](https://bot.wangqiru.com/users/1/web_requests/92/%E7%9F%A5%E4%B9%8E%E6%97%A5%E6%8A%A5.xml){:target="_blank"}
 
-- [https://bot.wangqiru.com/users/1/web_requests/92/知乎日报.json](https://bot.wangqiru.com/users/1/web_requests/92/%E7%9F%A5%E4%B9%8E%E6%97%A5%E6%8A%A5.json)
+- [https://bot.wangqiru.com/users/1/web_requests/92/知乎日报.json](https://bot.wangqiru.com/users/1/web_requests/92/%E7%9F%A5%E4%B9%8E%E6%97%A5%E6%8A%A5.json){:target="_blank"}
 
 在 Reeder iOS 中的效果和知乎日报的对比：
 
@@ -132,7 +132,7 @@ Huginn 会输出两个 RSS 源地址，分别为 XML 和 JSON 格式。
 
 ### 配置文件下载
 附上三个 agent 的配置文件
-- [https://bot.wangqiru.com/scenarios/4/export.json](https://bot.wangqiru.com/scenarios/4/export.json)
+- [https://bot.wangqiru.com/scenarios/4/export.json](https://bot.wangqiru.com/scenarios/4/export.json){:target="_blank"}
 
 ##### 注
-[^1]: 其他非重要的对应选项请参照 [Huginn 官方 wiki](https://github.com/huginn/huginn/wiki)  。
+[^1]: 其他非重要的对应选项请参照 [Huginn 官方 wiki](https://github.com/huginn/huginn/wiki){:target="_blank"}

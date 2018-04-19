@@ -10,7 +10,7 @@ title: 利用 Huginn 检测资源更新并触发 aria2 任务
 
 <!--more-->
 
-抛砖引玉：某些页面会定期发布资源更新，例如[ ubuntu 镜像](https://www.ubuntu.com/download/alternative-downloads)或任意资源发布页面。利用 Huginn 的 Website Agent 和 Post Agent 我们可以定期检测资源发布页面，并获取下载链接通过 aria2 JSONRPC 来触发下载。
+抛砖引玉：某些页面会定期发布资源更新，例如[ ubuntu 镜像](https://www.ubuntu.com/download/alternative-downloads){:target="_blank"} 或任意资源发布页面。利用 Huginn 的 Website Agent 和 Post Agent 我们可以定期检测资源发布页面，并获取下载链接通过 aria2 JSONRPC 来触发下载。
 
 ## Website Agent - 获取资源下载链接
 
@@ -20,7 +20,7 @@ title: 利用 Huginn 检测资源更新并触发 aria2 任务
 #### XPath selector/选择器
 在 `extract:url:xpath` 中，我们运用 XPath 来获取下载链接的路径（**Huginn 同时支持 CSS 选择器**）。 XPath 是一种适用于 XML/HTML 的查询语句，可以用于抓取指定元素的属性，广泛运用于 Web 应用自动化测试和爬虫。
 
-如果懒得学习 [XPath W3Schools 教程](https://www.w3schools.com/xml/xpath_intro.asp)，可以通过浏览器控制台获取 XPath 绝对路径，但有时候 Huginn 会无法识别浏览器自动抓取的 XPath 路径。
+如果懒得学习 [XPath W3Schools 教程](https://www.w3schools.com/xml/xpath_intro.asp){:target="_blank"}，可以通过浏览器控制台获取 XPath 绝对路径，但有时候 Huginn 会无法识别浏览器自动抓取的 XPath 路径。
 
 ![浏览器控制台获取 XPath 路径](/assets/images/2018-01-30/xpath-selector.png){: .center-image} 
 
@@ -62,14 +62,14 @@ http://releases.ubuntu.com/17.10/ubuntu-17.10.1-desktop-amd64.iso.torrent | Ubun
 
 ### 配置文件下载
 附上两个 agent 的配置文件
-- [https://bot.wangqiru.com/scenarios/6/export.json](https://bot.wangqiru.com/scenarios/6/export.json)
+- [https://bot.wangqiru.com/scenarios/6/export.json](https://bot.wangqiru.com/scenarios/6/export.json){:target="_blank"}
 
 
 ## TL;DR Post Agent 2 - 推送触发通知
 
-Post Agent 同样可以用于推送触发通知，原理同上都是通过 http post，[Telegram](https://core.telegram.org/bots/api#making-requests) 和 [Slack](https://api.slack.com/incoming-webhooks#sending_messages) 都有对应的 API ，自行摸索即可。
+Post Agent 同样可以用于推送触发通知，原理同上都是通过 http post，[Telegram](https://core.telegram.org/bots/api#making-requests){:target="_blank"} 和 [Slack](https://api.slack.com/incoming-webhooks#sending_messages){:target="_blank"} 都有对应的 API ，自行摸索即可。
 
 之前写了一个 Slack 的误删了，就懒得再写了。
 
 ##### 注
-[^1]: 其他非重要的对应选项请参照 [Huginn 官方 wiki](https://github.com/huginn/huginn/wiki)  。
+[^1]: 其他非重要的对应选项请参照 [Huginn 官方 wiki](https://github.com/huginn/huginn/wiki){:target="_blank"}

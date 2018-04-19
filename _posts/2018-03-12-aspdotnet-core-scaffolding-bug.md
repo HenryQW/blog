@@ -31,7 +31,7 @@ When `DbContext` and `Models` are placed in separated projects from the main `We
 
 ![Scaffolding error](/assets/images/2018-03-12/error.png)
 
-This issue is being addressed and [the patch](https://github.com/aspnet/Scaffolding/pull/676) is releasing soon (hopefully) in Scaffolding v2.0.3.
+This issue is being addressed and [the patch](https://github.com/aspnet/Scaffolding/pull/676){:target="_blank"} is releasing soon (hopefully) in Scaffolding v2.0.3.
 
 Meanwhile, a quick fix is to supply full qualifier name into `DbSet`:
 {% highlight C# %}
