@@ -205,7 +205,7 @@ Using gulp I achieved:
 1. SCSS was compiled into browser-readable CSS(gulp-sass).
 2. Js files were translated into browser-readable versions(via `gulp-babel`) with all dependencies(via `gulp-browserify`) and combined into a single js file(via gulp-concat).
 3. Both CSS and JS are all minified to improve loading speed, but `gulp-sourcemaps` still allows them to be revert back during console debugging.
-4. Reduced amount of configurations needed (previous I was using babel, uglify and browserify separately).
+4. Reduced amount of configurations needed (previously I was using babel, uglify and browserify separately).
 
 {% highlight js%}
 // in gulpfile.js
