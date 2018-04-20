@@ -31,7 +31,8 @@ title: 记录学习使用 Node 搭建 API 服务器的路程
 2. 学习 Node 下的单元测试
 3. 抓取分享链接的全文，通过 Huginn 输出 RSS
 4. 基于 chartjs 的简单数据可视化，RSS 阅读量，huginn 工作量等
-5. All in one hub 式主页，聚合所有服务
+5. All in one hub 式主页，聚合所有服务，[学习前端小知识]({% post_url 2018-04-19-henry's-dashboard %})
+![All in one hub 式主页](/assets/images/2018-03-09/dashboard.jpg)
 
 # Technology
 ### Framework 
