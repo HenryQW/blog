@@ -278,7 +278,8 @@ The end product looks easy to produce but the journey is what makes the destinat
 .evenly-distributed-children-2 figure, .evenly-distributed-children-3 figure{
       display: inline-block;
       vertical-align: top;
-      overflow-x: scroll;
+      overflow-x: auto;
+      width:100%;
 }
 
 @media screen and (min-width: 830px) {
