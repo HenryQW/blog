@@ -1,11 +1,13 @@
 ---
 layout: post
 key: 20180419
-modify_date: 2018-04-19
+modify_date: 2018-04-25
 tags: [Node, chart.js, SCSS, Gulp, English]
 title: The birth of Henry's Dashboard
 ---
 ![Dashboard](/assets/images/2018-03-09/dashboard.jpg)
+
+[https://api.henry.wang](https:api.henry.wang)
 
 And some frontend practices.
 
@@ -83,7 +85,9 @@ $color1: #f2e4d6
 {% endhighlight %}
 </div>
 
-SASS is the most concise one, SCSS is SASS with CSS syntax, which is also the reason why I chose it (who doesn't like closing semicolons!).
+* CSS is behaving CSSly
+* SASS is the most concise one
+* SCSS is SASS with CSS syntax, which is also the reason why I chose it (who doesn't like closing semicolons!).
 
 ### Inheritance, Function and Mixin
 {% highlight scss %}
@@ -153,7 +157,7 @@ $types: h2 p span;
 {% endhighlight %}
 </div>
 
-There are also many other features introduced in [the official guide](https://sass-lang.com/guide){:target="_blank"} I don't use currently. In short, SCSS drastically improves the reusability and that's absolutely crucial.
+There are also many other features introduced in [the official guide](https://sass-lang.com/guide){:target="_blank"} that I don't use currently. In short, SCSS drastically improves the reusability and that's absolutely crucial.
 
 ## Jade Templating
 [Jade](http://jade-lang.com){:target="_blank"}  is a html template engine, which allows you to produce html without opening/closing all the annoying tags. Indentation is crucial in Jade.
@@ -204,7 +208,7 @@ Another objective of building this page, is to explore more npm packages, in thi
 Using gulp I achieved:
 1. SCSS was compiled into browser-readable CSS(gulp-sass).
 2. Js files were translated into browser-readable versions(via `gulp-babel`) with all dependencies(via `gulp-browserify`) and combined into a single js file(via gulp-concat).
-3. Both CSS and JS are all minified to improve loading speed, but `gulp-sourcemaps` still allows them to be revert back during console debugging.
+3. Both CSS and JS are all minified to improve loading speed, but `gulp-sourcemaps` still allows them to be reverted back during console debugging.
 4. Reduced amount of configurations needed (previously I was using babel, uglify and browserify separately).
 
 {% highlight js%}
@@ -270,7 +274,14 @@ gulp.task('default', ['scss', 'js']);
 {% endhighlight %}
 
 # Conclusion
-A dashboard was built, with charts to display the number of feeds/events generated in the past 7 days by my TTRSS and huginn services (more services to come).
+1. A dashboard was built, with charts to display the number of feeds/events generated in the past 7 days by my TTRSS and huginn services (more services to come).
+
+2. SCSS was learned with practice, a style is only stylish when it's reusable.
+
+3. Experience in using Gulp was gained, which will save me some time in future building.
+
+4. More node.js practices were done while developing the backend. Also bugs in existing code were discovered and fixed along the way. Improvements were also implemented due to richer node.js experience.
+
 
 The end product looks easy to produce but the journey is what makes the destination beautiful.
 
