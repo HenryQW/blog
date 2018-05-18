@@ -1,7 +1,7 @@
 ---
 layout: post
 key: 20180419
-modify_date: 2018-04-25
+modify_date: 2018-05-18
 tags: [Node, chart.js, SCSS, Gulp, English]
 title: The birth of Henry's Dashboard
 ---
@@ -211,6 +211,7 @@ Using gulp I achieved:
 3. Both CSS and JS are all minified to improve loading speed, but `gulp-sourcemaps` still allows them to be reverted back during console debugging.
 4. Reduced amount of configurations needed (previously I was using babel, uglify and browserify separately).
 
+#### Gulp 3
 {% highlight js%}
 // in gulpfile.js
 
@@ -271,6 +272,62 @@ gulp.task('default', ['scss', 'js']);
   "start": "npm run build && node ./bin/www",
   "build": "./node_modules/.bin/gulp"
 }
+{% endhighlight %}
+
+#### Gulp 4
+
+On 18 May I migrated to Gulp 4 which required some modifications to the config file.
+
+{% highlight js%}
+// in gulpfile.js
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
+const browserify = require('gulp-browserify');
+const babel = require('gulp-babel');
+const del = require('del');
+
+const paths = {
+  scss: ['./scripts/*.scss'],
+  js: ['./scripts/*.js'],
+};
+
+gulp.task('clean', () => del(['./public/css'], ['./public/js']));
+
+gulp.task('scss', () =>
+  gulp
+    .src(paths.scss)
+    .pipe(sass({
+      outputStyle: 'compressed',
+    }).on('error', sass.logError))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('./public/css')));
+
+gulp.task('js', () =>
+  gulp
+    .src(paths.js)
+    .pipe(babel({
+      presets: ['env'],
+    }))
+    .pipe(browserify({
+      insertGlobals: true,
+    }))
+    .pipe(uglify())
+    .pipe(concat('index.js'))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('./public/js')));
+
+gulp.task('watch', () => {
+  gulp.watch(paths.scss, ['scss']);
+  gulp.watch(paths.js, ['js']);
+});
+
+gulp.task(
+  'default',
+  gulp.series('clean', gulp.parallel('scss', 'js')),
+);
 {% endhighlight %}
 
 # Conclusion
