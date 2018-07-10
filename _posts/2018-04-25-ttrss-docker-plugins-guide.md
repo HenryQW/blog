@@ -141,7 +141,7 @@ It utilizes [Mercury Parser](https://mercury.postlight.com/web-parser/){:target=
 
 Steps to configure:
 1. Enable the plugin *mercury_fulltext* in **Preferences/Plugins**.
-2. Save your *Mercury API key* (apply for free [here](https://mercury.postlight.com/web-parser/)){:target="_blank"} in the *Mercury_fulltext settings* under **Feeds** tab.
+2. Save your *Mercury API key* (apply for free [here](https://mercury.postlight.com/web-parser/){:target="_blank"}) in the *Mercury_fulltext settings* under **Feeds** tab.
 3. Configure for feeds under **Plugins** tab of the **Edit Feed** window (you can right click your feed to get there).
 
 ### Fever
