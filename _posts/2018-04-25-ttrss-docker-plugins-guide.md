@@ -69,8 +69,10 @@ The default credential is `admin` and `password`. You should be prompted to chan
 
 {% highlight bash %}
 docker run -it --name ttrss --restart=always \
---link postgres:db  \
 -e SELF_URL_PATH =https://ttrssdev.henry.wang \
+-e DB_HOST=postgres  \
+-e DB_PORT=5432  \
+-e DB_NAME=myttrss  \
 -e DB_USER=postgres  \
 -e DB_PASS=mydbpass  \
 -p 3100:80  \
