@@ -6,10 +6,9 @@ titles:
   zh-Hans: 简历
 key: page-about
 skill:
-  lans: C#:5,Java:5,JS:4,PHP:2,Matlab:2,Ada:1
-  tools: Git:5,Agile Scrum:5,Docker:4,Tableau:4,RDBMS:3,ElasticSearch:3,Travis/TeamCity:3
+  lans: C#:5,Java:5,JS:4,PHP:2
+  tools: Git:5,Docker:4,Tableau:4,RDBMS:3,ElasticSearch:3,Travis/TeamCity:3
   vis: D3.js:5,LeafletJS:3,Voreen:2,VolView:2,Mapbox:2,Kibana:2
-  os: Unix-based:5,Android:2
   services: Tiny Tiny RSS:4,Huginn:4,Plex:3,aria2:3,WebDAV:3,Hubot:2,Squid:2
 ---
 
@@ -29,7 +28,7 @@ Company |Country |Title |Year
 
 ## Skill
 
-I know many skills across different proficiency levels.
+I have many skills across different proficiency levels.
 
 <style>
   .m-tags > ul > * {
@@ -87,23 +86,7 @@ I know many skills across different proficiency levels.
 </ul>
 </div>
 
-<div class="m-tags js-tags">
-<ul>
-{%- assign skills = page.skill.os | split: ',' -%}
-{%- assign i = skills | size -%}
-  {% for skill in skills %}
-  {%- assign pair = skill | split: ':' -%}
-    <li>
-     <button type="button" class="js-article-tag skill-{{ pair[1] }} pill-button"
-       onclick="javascript:void(0)">
-         <span>&nbsp; {{ pair[0] }} &nbsp;</span>
-      </button>
-    </li>
-  {% endfor %}
-</ul>
-</div>
-
-I host services on my debian cloud server that simplify and automate my life, you can [request for access](mailto:henry@wangqiru.com).
+I host services on my debian cloud server that simplify and automate my life, you can [request for access](mailto:hi@henry.wang).
 <div class="m-tags js-tags">
 <ul>
 {%- assign skills = page.skill.services | split: ',' -%}
@@ -154,7 +137,7 @@ Organisation |Country |Contribution |Year
 
 ## Contact
 
-For more details, please [email me](mailto:henry@wangqiru.com) or visit my [LinkedIn profile](https://www.linkedin.com/in/wangqiru).
+For more details, please [email me](mailto:hi@henry.wang) or visit my [LinkedIn profile](https://www.linkedin.com/in/wangqiru).
 
 
 ##### Footnote
