@@ -1,5 +1,4 @@
 ---
-layout: post
 key: 20171220
 modify_date: 2017-12-20
 tags: [Ubuntu, VM, English]

@@ -7,7 +7,7 @@ branches:
 notifications:
   email:
     recipients:
-      - henry@wangqiru.com
+      - travis@henry.wang
     on_success: never
 script: JEKYLL_ENV=production bundle exec jekyll build --config ./_config.yml
 deploy:

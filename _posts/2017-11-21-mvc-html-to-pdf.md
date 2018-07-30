@@ -1,5 +1,4 @@
 ---
-layout: post
 key: 20171121
 modify_date: 2017-12-04
 tags: [C#, MVC, chart.js, English]

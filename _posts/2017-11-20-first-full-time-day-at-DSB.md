@@ -1,5 +1,4 @@
 ---
-layout: post
 key: 20171120
 modify_date: 2018-03-15
 title: First "full-time" day @ DSB

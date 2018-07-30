@@ -1,5 +1,4 @@
 ---
-layout: post
 key: 20180313
 modify_date: 2018-03-13
 tags: [Node, Docker, English]
@@ -13,19 +12,19 @@ Make npm `phantomjs-prebuilt` package compatible with alpine-based docker image.
 ### musl-libc vs glibc
 alpine uses `musl-libc` as its C library instead of `glibc` to shrink down the image size and improve performance [^1].
 
-However phantomjs doesn't get compiled with `musl-libc` which cripples `phantomjs-prebuilt` node package inside the container. The cause was [pinned down](https://github.com/sgerrand/alpine-pkg-glibc/issues/13#issuecomment-194111154) to the missing `ld-linux-x86-64.so.2`.
+However phantomjs doesn't get compiled with `musl-libc` which cripples `phantomjs-prebuilt` node package inside the container. The cause was [pinned down](https://github.com/sgerrand/alpine-pkg-glibc/issues/13#issuecomment-194111154){:target="_blank"} to the missing `ld-linux-x86-64.so.2`.
 
 
 ![phantomjs error](/assets/images/2018-03-13/phantomjs-error.png)
 
 It appears there is no fix for this even after so long.
-- [alpine-pkg-glibc/issues/13](https://github.com/sgerrand/alpine-pkg-glibc/issues/13)
-- [grafana-docker/issues/44](https://github.com/grafana/grafana-docker/issues/44)
-- [phantomjs-node/issues/702](https://github.com/amir20/phantomjs-node/issues/702)
+- [alpine-pkg-glibc/issues/13](https://github.com/sgerrand/alpine-pkg-glibc/issues/13){:target="_blank"}
+- [grafana-docker/issues/44](https://github.com/grafana/grafana-docker/issues/44){:target="_blank"}
+- [phantomjs-node/issues/702](https://github.com/amir20/phantomjs-node/issues/702){:target="_blank"}
 
 ## Solution
 ### Dockerize
-One approach is to [Dockerize](https://github.com/larsks/dockerize) phantomjs into linux executables inside a `glibc` compatible base (Debian or Ubuntu):
+One approach is to [Dockerize](https://github.com/larsks/dockerize){:target="_blank"} phantomjs into linux executables inside a `glibc` compatible base (Debian or Ubuntu):
 
 {% highlight bash %}
 // download phantomjs
@@ -118,4 +117,4 @@ tar -zxf phantomjs.tar.gz /
 
 ##### Footnote
 
-[^1]: http://www.etalabs.net/compare_libcs.html
+[^1]: [http://www.etalabs.net/compare_libcs.html](http://www.etalabs.net/compare_libcs.html){:target="_blank"}

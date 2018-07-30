@@ -1,5 +1,4 @@
 ---
-layout: post
 key: 20180301
 modify_date: 2018-03-03
 tags: [Software Design, C#, English]
