@@ -1,4 +1,5 @@
 ---
+layout: article
 titles:
   en: About
   zh: 关于
@@ -18,6 +19,7 @@ I feel comfortable collaborating in multicultural and diverse-background 🌏 en
 ## Work
 
 Company |Country |Title |Year
+| --- |  --- | --- | --- |
 [Swansea University](http://www.swansea.ac.uk/){:target="\_blank"} |UK 🇬🇧 |Software Developer |Nov 2017 - **Present**
 [Swansea University](http://www.swansea.ac.uk/){:target="\_blank"} |UK 🇬🇧 |Software Developer Intern |Jun 2017 - Sep 2017
 [LeEco](https://www.letv.com/){:target="\_blank"} |China 🇨🇳 |Java Developer Intern |Apr 2015 – July 2015
@@ -28,14 +30,6 @@ Company |Country |Title |Year
 
 I know many skills across different proficiency levels.
 
-<style>
-  .m-tags > ul > * {
-    margin-top: 0.2rem !important;
-    margin-bottom: 0.2rem !important;
-    list-style-type: none !important;
-    margin-right: 0.25rem !important;
-  }
-</style>
 <div class="site-tags js-tags">
 <ul class="menu">
 {%- assign skills = page.skill.lans | split: ',' -%}
@@ -116,6 +110,7 @@ I host services on my debian cloud server that simplify and automate my life, yo
 ## Education
 
 Institution |Country |Major |Year |Result
+| --- |  --- | --- | --- | --- |
 [Swansea University](http://www.swansea.ac.uk/){:target="\_blank"} |UK 🇬🇧 |Msc. Advanced Computer Science |2015 - 2017 |**_Distinction_**
 [Nanyang Polytechnic](http://www.nyp.edu.sg/){:target="\_blank"} |Singapore 🇸🇬 |Dip. Information Technology |2012 - 2015 |GPA 3.69/4.00
 [Stanford University](https://www.coursera.org/learn/machine-learning){:target="\_blank"}[^1]|US 🇺🇸 |Machine Learning|2016 |[Certificate](https://www.coursera.org/account/accomplishments/records/QE9LANFCQYVE){:target="\_blank"}
