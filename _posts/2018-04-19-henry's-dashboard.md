@@ -346,6 +346,7 @@ gulp.task(
 
 # Conclusion
 1. A dashboard was built, with charts to display the number of feeds/events generated in the past 7 days by my TTRSS and huginn services (more services to come).
+    1. On 31 July, a new graph which displays  [wangqiru/ttrss docker image](https://hub.docker.com/r/wangqiru/ttrss/){:target="_blank"}'s pull counts is added. This utilises node-cron, axios and sequelize.
 
 2. SCSS was learned with practice, a style is only stylish when it's reusable.
 
