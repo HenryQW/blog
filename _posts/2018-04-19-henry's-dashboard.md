@@ -1,6 +1,6 @@
 ---
 key: 20180419
-modify_date: 2018-05-18
+modify_date: 2018-06-06
 tags: [Node, chart.js, SCSS, Gulp, English]
 title: The birth of Henry's Dashboard
 ---
@@ -309,6 +309,15 @@ gulp.task('js', () =>
     .src(paths.js)
     .pipe(babel({
       presets: ['env'],
+      plugins: [
+        [
+          'transform-runtime',
+          {
+            polyfill: false,
+            regenerator: true,
+          },
+        ],
+      ],
     }))
     .pipe(browserify({
       insertGlobals: true,
@@ -319,14 +328,20 @@ gulp.task('js', () =>
     .pipe(gulp.dest('./public/js')));
 
 gulp.task('watch', () => {
-  gulp.watch(paths.scss, ['scss']);
-  gulp.watch(paths.js, ['js']);
+  gulp.watch(paths.scss, gulp.series('scss'));
+  gulp.watch(paths.js, gulp.series('js'));
 });
 
 gulp.task(
   'default',
+  gulp.series('clean', gulp.parallel('scss', 'js'), 'watch'),
+);
+
+gulp.task(
+  'deploy',
   gulp.series('clean', gulp.parallel('scss', 'js')),
 );
+
 {% endhighlight %}
 
 # Conclusion
