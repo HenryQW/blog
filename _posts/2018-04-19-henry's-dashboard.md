@@ -6,7 +6,7 @@ title: The birth of Henry's Dashboard
 ---
 ![Dashboard](/assets/images/2018-03-09/dashboard.jpg)
 
-[https://api.henry.wang](https://api.henry.wang)
+[https://api.henry.wang](https://api.henry.wang){:target="_blank"} 
 
 And some frontend practices.
 
