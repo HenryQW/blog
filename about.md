@@ -6,6 +6,8 @@ titles:
   zh-Hans: 关于
   zh-Hant: 關於
 key: page-about
+aside:
+  toc: true
 skill:
   lans: C#:4,Java:4,JavaScript:3,PHP:2
   tools: Git:4,Agile Methodology:4,Docker:4,ElasticSearch/Logstash/Kibana:4,RDBMS(SQL/PG/MySQL):3,Travis/TeamCity:3
