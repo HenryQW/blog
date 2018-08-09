@@ -88,3 +88,7 @@ EMAIL_ME:
   zh-Hant: "給我發郵件。"
 
 COPYRIGHT_DATES: "2018"
+
+PRIVACY:
+  en:      "Privacy Policy"
+  zh:      "隐私政策"
