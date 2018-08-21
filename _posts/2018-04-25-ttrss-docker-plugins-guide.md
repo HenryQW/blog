@@ -1,6 +1,6 @@
 ---
 key: 20180425
-modify_date: 2018-05-16
+modify_date: 2018-08-21
 tags: [Docker, TTRSS, English]
 title: A ttrss setup guide - Start your own RSS aggregator today
 ---
@@ -25,11 +25,11 @@ Today the image is hitting over 100k pulls which surprises me, probably due to t
 
 ## Requirements
 
-Bear in mind that this docker image isn't fully self-contained, it requires a database to work. If you want to assign it with an URL, you need a Nginx web server too.
+Bear in mind that this docker image isn't fully self-contained, it requires a database to work. If you want to assign it with an URL, you need an nginx web server too.
 
 If you are using a machine with limited resources (RAM < 512MB) then you'd better not host other services, otherwise it might not be working as intended.
 
-Personally I'd recommend running with Nginx and Postgresql.
+Personally I'd recommend running with Nginx and PostgreSQL.
 
 # Deployment and Configuration
 
@@ -39,13 +39,20 @@ Personally I'd recommend running with Nginx and Postgresql.
 
 There is an easy way to deploy which is via `docker-compose`. It was made available on 15 May [here](https://github.com/HenryQW/docker-ttrss-plugins/blob/master/docker-compose.yml){:target="_blank"}.
 
-However, a Nginx instance will most likely be required and a sample configuration is provided [below](#nginx).
+It's as simple as download [the file](https://github.com/HenryQW/docker-ttrss-plugins/blob/master/docker-compose.yml){:target="_blank"} and run:
+{% highlight bash %}
+docker-compose up -d
+{% endhighlight %}
+
+However, an nginx instance will most likely be required and a sample configuration is provided [below](#nginx).
 
 ## The Not-So-Easy Way
 
 The not-so-easy way is to deploy two docker containers separately.
 
-### Postgresql
+### PostgreSQL
+
+> If you already have a PostgreSQL instance running (docker or non-docker), you may skip this part.
 
 I chose this image because it allows you to specify the extensions you want to enable. `pg_trgm` is required for marking similar feeds as read via the ttrss plugin `af_psql_trgm`.
 
@@ -54,33 +61,75 @@ The default user is `postgres`.
 It persists its data in directory `/docker/postgres/data/`.
 
 {% highlight bash %}
-docker run --name postgres --restart=always \
--p 5432:5432 -v /docker/postgres/data/:/var/lib/postgresql/ \
--e PG_PASSWORD=mydbpass -e DB_EXTENSION=pg_trgm \
--d sameersbn/postgresql:latest
+docker run -d --name postgres --restart=always \
+-v /docker/postgres/data/:/var/lib/postgresql/ \
+-e PG_PASSWORD=mydbpass \
+-e DB_EXTENSION=pg_trgm \
+-p 5432:5432 \
+sameersbn/postgresql:latest
 {% endhighlight %}
 
 ### TTRSS
 
-This links to the postgresql database created just now and exposes port 3100 to the public.
+This links ttrss with the PostgreSQL container created just now and exposes port 181 to the public.
 
 The default credential is `admin` and `password`. You should be prompted to change them upon first login, please do so.
 
 {% highlight bash %}
-docker run -it --name ttrss --restart=always \
--e SELF_URL_PATH =https://ttrssdev.henry.wang \
+docker run -dit --name ttrss --restart=always \
+-e SELF_URL_PATH=https://ttrssdev.henry.wang \
 -e DB_HOST=postgres  \
 -e DB_PORT=5432  \
 -e DB_NAME=myttrss  \
 -e DB_USER=postgres  \
 -e DB_PASS=mydbpass  \
--p 3100:80  \
--d wangqiru/ttrss
+-p 181:80  \
+wangqiru/ttrss
 {% endhighlight %}
+
+If you are connecting ttrss to an existing postgresl container, it will not work properly at this stage because there is one more thing you need to setup: the connection between two containers.
+
+> There is a shortcut flag `--link` command. However, I'm not going to use this as it is a legacy command and may eventually be removed.[^1]
+
+The recommended approach is to use docker network.
+
+<ol>
+<li>Create a docker network named ttrss_network</li>
+
+{% highlight bash %}
+docker network create ttrss_network
+{% endhighlight %}
+
+<li>Connect both container to ttrss_network</li>
+{% highlight bash %}
+docker network connect ttrss_network postgres
+docker network connect ttrss_network ttrss
+{% endhighlight %}
+
+<li>Restart ttrss container for the network to take effect</li>
+{% highlight bash %}
+docker restart ttrss
+{% endhighlight %}
+</ol>
+
+Alternatively, if you have an existing docker network, you can spin up TTRSS in this way:
+{% highlight bash %}
+docker run -dit --name ttrss --restart=always \
+--net your_network_name \
+-e SELF_URL_PATH=https://ttrssdev.henry.wang \
+-e DB_HOST=your_postgres_container_name  \
+-e DB_PORT=5432  \
+-e DB_NAME=myttrss  \
+-e DB_USER=postgres  \
+-e DB_PASS=mydbpass  \
+-p 181:80  \
+wangqiru/ttrss
+{% endhighlight %}
+
 
 ### Nginx
 
-This is a nginx config that forces all traffics through https and reverse proxies all requests into the ttrss container (inside it has its own nginx server listening to requests) created above.
+This is an nginx config that forces all traffics through https and reverse proxies all requests into the ttrss container (inside it has its own nginx server listening to requests) created above.
 
 ssl certificate can be obtained for free [here at Let's Encrypt](https://letsencrypt.org){:target="_blank"}.
 
@@ -165,3 +214,7 @@ Unfortunately I'm not using this plugin because I use [Huginn](https://github.co
 # Conclusion
 
 Now you should have a working ttrss instance. Forget algorithm-recommended newsfeeds/timelines, begin adding your feed!
+
+##### Footnote
+
+[^1]: [Legacy container links](https://docs.docker.com/network/links/){:target="_blank"}
