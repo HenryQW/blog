@@ -1,7 +1,7 @@
 <header class="header">
   <div class="main">
     <div class="header__main">
-      <div class="logo">
+      <div class="logo" style="height:100%; display:flex; align-items:center;">
         <img rel="icon" src="/assets/apple-touch-icon.png" height="60%">&nbsp;
         {%- assign _paths_root = site.paths.root | default: site.data.variables.default.paths.root  -%}
         {%- include snippets/get-nav-url.html path=_paths_root -%}
