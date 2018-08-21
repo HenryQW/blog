@@ -8,6 +8,7 @@ default:
     archive:  /archive.html
     rss:  /feed.xml
     privacy: /privacy.html
+    search_json: /search.json
   mathjax: false
   mathjax_autoNumber: false
   mermaid: false

@@ -64,6 +64,7 @@ paths:
   archive : # "/archive.html" (default)
   rss     : # "/feed.xml" (default)
   privacy : # "/privacy.xml" (default)
+  search_json: # "/search.json" (default)
 
 
 ## => Post
