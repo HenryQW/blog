@@ -76,7 +76,7 @@ This links ttrss with the PostgreSQL container created just now and exposes port
 The default credential is `admin` and `password`. You should be prompted to change them upon first login, please do so.
 
 {% highlight bash %}
-docker run -dit --name ttrss --restart=always \
+docker run -dit --name=ttrss --restart=always \
 -e SELF_URL_PATH=https://ttrssdev.henry.wang \
 -e DB_HOST=postgres  \
 -e DB_PORT=5432  \
@@ -114,7 +114,7 @@ docker restart ttrss
 
 Alternatively, if you have an existing docker network, you can spin up TTRSS in this way:
 {% highlight bash %}
-docker run -dit --name ttrss --restart=always \
+docker run -dit --name=ttrss --restart=always \
 --net your_network_name \
 -e SELF_URL_PATH=https://ttrssdev.henry.wang \
 -e DB_HOST=your_postgres_container_name  \
