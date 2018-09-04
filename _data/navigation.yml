@@ -12,6 +12,17 @@ header:
       zh-Hant:  關於
     url:        /about.html
   - titles:
+      en:       ✈️Travel
+      zh:       ✈️旅行️️️
+      zh-Hans:  ✈️旅行
+    url:        https://travel.henry.wang
+  - titles:
+      en:       API
+      zh:       API
+      zh-Hans:  API
+      zh-Hant:  API
+    url:        https://api.henry.wang
+  - titles:
       en:       RSS
       zh:       RSS
       zh-Hans:  RSS
