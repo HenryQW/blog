@@ -37,19 +37,6 @@
     padding-bottom: map-get($layout, footer-height);
   }
 
-  .article__header {
-    margin-top: map-get($spacers, 4);
-    header, h1 {
-      display: inline;
-    }
-    .split-space {
-      @include user-select(none);
-    }
-    .edit-on-github {
-      text-decoration: none !important;
-    }
-  }
-
   .page__comments {
     padding-bottom: map-get($base, vertical-space-lg);
   }
@@ -151,9 +138,6 @@
       }
     }
   }
-  .page__content {
-    display: block;
-  }
   .page__search-panel {
     display: none;
   }
@@ -165,4 +149,26 @@
       display: block;
     }
   }
+
+  .hero--light {
+    .article__info {
+      color: $text-color-theme-light;
+    }
+  }
+  .hero--dark {
+    .article__info {
+      color: $text-color-theme-dark;
+    }
+  }
+}
+
+.page__main--immersive {
+  .page__header {
+    position: absolute;
+    width: 100%;
+  }
+  .hero__content {
+    padding-top: map-get($layout, header-height);
+  }
+
 }
