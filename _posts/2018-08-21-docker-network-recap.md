@@ -30,7 +30,7 @@ Default bridge driver doesn't provide functionalities like `service discovery` a
 
 ### User-Defined
 
-Unlike default, user-defined bridge network allows containers to interpolate.
+Unlike default, user-defined bridge network allows containers on the same to interpolate.
 
 <ol>
 <li>Create a docker network named `my-net`</li>
@@ -64,7 +64,13 @@ The above containers:
 
 On top of that, containers within the same user-defined bridge network open up all ports to each other.
 
-# Conclusion
+
+## Host Network
+
+Host network is as straightforward as the name suggests, all containers with a host network will have no network isolation, thus can be directly accessed via host_ip:container_port. Although no `service discovery` and `DNS resolution`will be provided, containers can use public ip address to communicate with each other.
+
+Everything else (files, processes) will be isolated just like normal.
+
 
 
 [^1]: [Legacy container links](https://docs.docker.com/network/links/){:target="_blank"}
