@@ -1,6 +1,6 @@
 ---
 key: 20180821
-modify_date: 2018-08-22
+modify_date: 2018-09-04
 tags: [Docker, English]
 title: Docker Network Recap
 ---
@@ -69,7 +69,16 @@ On top of that, containers within the same user-defined bridge network open up a
 
 Host network is as straightforward as the name suggests, all containers with a host network will have no network isolation, thus can be directly accessed via host_ip:container_port. Although no `service discovery` and `DNS resolution`will be provided, containers can use public ip address to communicate with each other.
 
+{% highlight bash %}
+docker run -dit --name=postgres \
+--net=host \
+postgres
+{% endhighlight %}
+
+`--net=host` allows the above postgres instance to be accessible via host_ip:5432.
+
 Everything else (files, processes) will be isolated just like normal.
+
 
 
 
