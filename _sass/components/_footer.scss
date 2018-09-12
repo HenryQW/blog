@@ -4,11 +4,6 @@
 
 .footer {
   background: $footer-background;
-  height: map-get($layout, footer-height);
-  .author-links {
-    @include overflow(auto);
-    padding-top: 1rem;
-  }
   p {
     color: $footer-text-color;
   }
@@ -29,5 +24,12 @@
     text-align: center;
     font-size: map-get($base, font-size-xs);
     margin: 1rem auto 0 auto;
+  }
+}
+.footer__author-links {
+  @include overflow(auto);
+  .author-links {
+    padding-top: 1rem;
+    text-align: center;
   }
 }
