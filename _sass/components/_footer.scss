@@ -3,6 +3,9 @@
  */
 
 .footer {
+  @include flexbox();
+  @include align-items(center);
+  height: map-get($layout, footer-height);
   background: $footer-background;
   p {
     color: $footer-text-color;
@@ -11,6 +14,9 @@
     @include link-colors ($footer-text-color, $main-color-1);
   }
   .site-info {
+    margin: 1rem auto 0 auto;
+    font-size: map-get($base, font-size-xs);
+    text-align: center;
     .menu {
       line-height: map-get($base, line-height-xs);
       & > * {
@@ -21,9 +27,6 @@
         }
       }
     }
-    text-align: center;
-    font-size: map-get($base, font-size-xs);
-    margin: 1rem auto 0 auto;
   }
 }
 .footer__author-links {

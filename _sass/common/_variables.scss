@@ -45,7 +45,6 @@ $base: (
   font-size-h5-xs:        .75rem,
   font-size-h6-xs:        .75rem,
 
-  font-weight-light:      300,
   font-weight:            400,
   font-weight-bold:       700,
 
@@ -74,6 +73,13 @@ $spacers: (
   5:                      map-get($base, spacer) * 3
 );
 
+$z-index: (
+  actions: 996,
+  mask: 997,
+  sidebar: 998,
+  search: 999
+);
+
 $layout: (
   header-height:          5rem,
   header-height-sm:       3rem,
@@ -89,7 +95,7 @@ $layout: (
 // 0       500      1024      -
 
 $responsive: (
-  sm:                      0px,
+  sm:                      0,
   md:                      500px,
   lg:                      1024px
 );

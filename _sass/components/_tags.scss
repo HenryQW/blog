@@ -3,10 +3,10 @@
   .tag-button {
     @include clickable($text-color-3, $main-color-3, default, default, $text-color-2,$main-color-2, $text-color-2,$main-color-2);
     & > .tag-button__count {
-      font-size: map-get($base, font-size-xs);
       display: inline-block;
-      line-height: 1;
       margin-left: .2rem;
+      font-size: map-get($base, font-size-xs);
+      line-height: 1;
       vertical-align: top;
     }
   }
@@ -22,32 +22,4 @@
   .tag-button-4 {
     @include clickable($text-color-1, rgba($main-color-1, .9), default, default, $text-color-2,$main-color-2, $text-color-2,$main-color-2);
   }
-
-  // customise
-  // .skill-1 {
-  //   @include link-normal() {
-  //     background-color: rgba($main-color-2, .4);
-  //   }
-  // }
-  // .skill-2 {
-  //   @include link-normal() {
-  //     background-color: rgba($main-color-2, .55);
-  //   }
-  // }
-  // .skill-3 {
-  //   @include link-normal() {
-  //     background-color: rgba($main-color-2, .7);
-  //   }
-  // }
-  // .skill-4 {
-  //   @include link-normal() {
-  //     background-color: rgba($main-color-1, .8);
-  //   }
-  // }
-  // .skill-5 {
-  //   @include link-normal() {
-  //     background-color: rgba($main-color-1, 1);
-  //   }
-  // }
-  // customise
 }
