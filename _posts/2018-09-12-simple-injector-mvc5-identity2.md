@@ -40,7 +40,7 @@ Some key changes are:
 
 - `container.RegisterPerWebRequest<ApplicationUserManager>();` became `container.Register<ApplicationUserManager>(Lifestyle.Scoped);`, where `Lifestyle.Scoped` is defined beforehand `container.Options.DefaultScopedLifestyle = new WebRequestLifestyle();`
 
-- `ApplicationUserManager` needs a static methodf or initialisation, see code [below](#comeplete-solution)
+- `ApplicationUserManager` needs a static methodf or initialisation, see code [below](#complete-solution)
 
 - The same applies for `UserStore`
 {% highlight c# %}
