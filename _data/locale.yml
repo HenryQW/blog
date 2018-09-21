@@ -70,7 +70,7 @@ ARTICLE_LIST_DATE_FORMAT:
   zh-Hant: "%m月%d日"
 
 STATISTICS:
-  en:      "[POST_COUNT] post articles, [PAGE_COUNT] pages."
+  en:      "[POST_COUNT] articles, [PAGE_COUNT] pages."
   zh:      "共计 [POST_COUNT] 篇文章，[PAGE_COUNT] 页。"
   zh-Hans: "共计 [POST_COUNT] 篇文章，[PAGE_COUNT] 页。"
   zh-Hant: "共計 [POST_COUNT] 篇文章，[PAGE_COUNT] 頁。"
@@ -94,7 +94,7 @@ FOLLOW_ME:
   zh-Hant: "在 [NAME] 上關注我。"
 
 EMAIL_ME:
-  en:      "Send me Email."
+  en:      "Email me."
   zh:      "给我发邮件。"
   zh-Hans: "给我发邮件。"
   zh-Hant: "給我發郵件。"
@@ -104,3 +104,4 @@ COPYRIGHT_DATES: "2018"
 PRIVACY:
   en:      "Privacy Policy"
   zh:      "隐私政策"
+  zh-Hans: "隐私政策"

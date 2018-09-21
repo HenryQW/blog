@@ -3,24 +3,16 @@ rvm:
   - 2.4.1
 branches:
   only:
-  - custom
-notifications:
-  email:
-    recipients:
-      - travis@henry.wang
-    on_success: never
-script: JEKYLL_ENV=production bundle exec jekyll build --config ./_config.yml
+  - master
+script: JEKYLL_ENV=production bundle exec jekyll build --config ./docs/_config.yml
 deploy:
   edge:
     branch: v1.8.47
   provider: pages
-  github_token: $GITHUB_TOKEN
   skip_cleanup: true
+  github_token: $GITHUB_TOKEN
   local_dir: _site
   keep-history: true
   on:
-    branch: custom
-after_deploy:
-  - "curl -o /tmp/travis-merge-gh-pages https://raw.githubusercontent.com/HenryQW/travis-merger/master/travis-merge-gh-pages"
-  - "chmod a+x /tmp/travis-merge-gh-pages"
-  - "BRANCH_TO_MERGE=gh-pages BRANCH_TO_MERGE_INTO=master GITHUB_REPO=HenryQW/HenryQW.github.io /tmp/travis-merge-gh-pages"
+    branch: master
+    target_branch: gh-pages
