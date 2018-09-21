@@ -68,7 +68,8 @@ Henry 同志现已加入 RSSHub 豪华贡献者大军。
     - [中国驻外使领馆通知](https://docs.rsshub.app/#%E4%B8%AD%E5%9B%BD%E9%A9%BB%E5%A4%96%E4%BD%BF%E9%A2%86%E9%A6%86%E9%80%9A%E7%9F%A5){:target="_blank"}
     - [Hopper 特价机票](https://docs.rsshub.app/#hopper-flight-deals){:target="_blank"}
     - [大学公告通知](https://docs.rsshub.app/#%E5%A4%A7%E5%AD%A6%E9%80%9A%E7%9F%A5){:target="_blank"}
-    - [GitHub Issue, Followers, Stars](https://docs.rsshub.app/#%E4%BB%93%E5%BA%93-issue){:target="_blank"}
+    - [GitHub Issue, Followers, Stars](https://docs.rsshub.app/#%E4%BB%93%E5%BA%93-issue){:target="_blank"}
+
 2. 添加了路由的 HTTP Basic 认证，部分 RSS 阅读器支持该认证协议。
 3. 添加了未来实现 API 接口的基础，以支持第三方项目。
 4. 修改了部分现有代码，使其符合 ESLint 严格的要求。
