@@ -1,6 +1,6 @@
 ---
 key: 20180425
-modify_date: 2018-08-21
+modify_date: 2018-10-24
 tags: [Docker, TTRSS, English]
 title: A ttrss setup guide - Start your own RSS aggregator today
 ---
@@ -135,7 +135,7 @@ ssl certificate can be obtained for free [here at Let's Encrypt](https://letsenc
 
 {% highlight nginx %}
 upstream ttrssdev {
-  server 127.0.0.1:3100;
+    server 127.0.0.1:3100;
 }
 
 server {
@@ -183,6 +183,7 @@ The docker image comes with three plugins now:
 1. [Mercury](https://github.com/HenryQW/mercury_fulltext){:target="_blank"}
 2. [Fever](https://github.com/HenryQW/tinytinyrss-fever-plugin){:target="_blank"}
 3. [Feediron](https://github.com/feediron/ttrss_plugin-feediron){:target="_blank"}
+4. [OpenCC](https://github.com/HenryQW/ttrss_opencc){:target="_blank"}
 
 
 ### Mercury
@@ -210,6 +211,22 @@ If Mercury doesn't work well with the feed, you can use this to achieve the same
 
 Unfortunately I'm not using this plugin because I use [Huginn](https://github.com/huginn/huginn){:target="_blank"} which provides more functionalities I need for other purposes (other than full text extraction). Please visit [its github](https://github.com/feediron/ttrss_plugin-feediron){:target="_blank"} for more information.
 
+### OpenCC
+
+A plugin for conversion from Traditional to Simplified Chinese based on [OpenCC by BYVoid](https://github.com/BYVoid/OpenCC){:target="_blank"}
+
+Steps to configure:
+1. Enable the plugin *OpenCC* in **Preferences/Plugins**.
+2. Save your *OpenCC API Address* in the *OpenCC settings* under **Feeds** tab.
+3. Configure for feeds under **Plugins** tab of the **Edit Feed** window (you can right click your feed to get there).
+
+There two demo instances for this plugin (availability is **not** guaranteed): [https://opencc.henry.wang](https://opencc.henry.wang) or [http://opencc2.henry.wang](http://opencc2.henry.wang)
+
+Preferably, deploy your own OpenCC API Server via Docker:
+
+{% highlight sh %}
+docker run -d -p 3000:3000 wangqiru/opencc_api_server
+{% endhighlight %}
 
 # Conclusion
 
