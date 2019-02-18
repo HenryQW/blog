@@ -190,16 +190,19 @@ The docker image comes with three plugins now:
 
 ### Mercury
 
-It utilizes [Mercury Parser](https://mercury.postlight.com/web-parser/){:target="_blank"} to extract the full content for feeds. An API key is required to use this plugin, which is available for free [here](https://mercury.postlight.com/web-parser/){:target="_blank"}.
+~~It utilizes [Mercury Parser](https://mercury.postlight.com/web-parser/){:target="_blank"} to extract the full content for feeds. An API key is required to use this plugin, which is available for free [here](https://mercury.postlight.com/web-parser/){:target="_blank"}.~~
+
+Mercury Parser API has stopped providing new API keys and existing keys will stop working on April 15, 2019. It was made open source on GitHub: [postlight/mercury-parser-api](https://github.com/postlight/mercury-parser-api){:target="_blank"} and you can host your own Mercury Parser instance. I've made a dockerized self-host solution,[HenryQW/mercury-parser-api](https://github.com/HenryQW/mercury-parser-api){:target="_blank"}, which is now a part of [the docker-compose file](https://github.com/HenryQW/docker-ttrss-plugins/blob/master/docker-compose.yml){:target="_blank"}.
 
 Steps to configure:
+
 1. Enable the plugin *mercury_fulltext* in **Preferences/Plugins**.
-2. Save your *Mercury API key* (apply for free [here](https://mercury.postlight.com/web-parser/){:target="_blank"}) in the *Mercury_fulltext settings* under **Feeds** tab.
+2. Save your *Mercury API Endpoint* in the *Mercury_fulltext settings* under **Feeds** tab.
 3. Configure for feeds under **Plugins** tab of the **Edit Feed** window (you can right click your feed to get there).
 
 ### Fever
 
-This simulates ttrss as a fever API, which is supported by many RSS readers.
+This simulates ttrss as a fever API, which is supported by many RSS readers. It is a part of [the docker-compose file](https://github.com/HenryQW/docker-ttrss-plugins/blob/master/docker-compose.yml){:target="_blank"}.
 
 Steps to configure:
 
