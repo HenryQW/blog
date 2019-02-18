@@ -21,10 +21,3 @@ header:
       zh:       ✈️旅行️️️
       zh-Hans:  ✈️旅行
     url: https://travel.henry.wang
-
-  - titles:
-      en:       RSS
-      zh:       RSS
-      zh-Hans:  RSS
-      zh-Hant:  RSS
-    url: /feed.xml
