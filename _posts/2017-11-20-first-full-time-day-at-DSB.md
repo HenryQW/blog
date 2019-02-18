@@ -3,11 +3,7 @@ key: 20171120
 modify_date: 2018-03-15
 title: First "full-time" day @ DSB
 article_header:
-  type: overlay
-  theme: dark
-  background_color: '#2d0c13'
   background_image:
-    gradient: 'linear-gradient(135deg, rgba(72, 41, 54, .5), rgba(45, 12, 19, .2))'
     src: /assets/images/2017-11-20/Setup.jpg
 cover: /assets/images/2017-11-20/Medical-School-Swansea-University.jpg
 ---

@@ -219,7 +219,7 @@ defaults:
         theme: dark
         background_color: '#2d0c13'
         background_image:
-          gradient: 'linear-gradient(135deg, rgba(72, 41, 54, .5), rgba(45, 12, 19, .2))'
+          gradient: 'linear-gradient(135deg, rgba(45, 12, 19, .4), rgba(19, 44, 51, .5))'
 
 
 ## => Plugins

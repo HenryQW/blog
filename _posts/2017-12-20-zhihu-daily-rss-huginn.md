@@ -3,13 +3,8 @@ key: 20171221
 modify_date: 2018-01-30
 tags: [Huginn, RSS, 知乎日报, 中文]
 title: 利用 Huginn 和知乎日报 API 制作全文 RSS
-article_header:
-  type: overlay
-  theme: dark
-  background_color: '#2d0c13'
-  background_image:
-    gradient: 'linear-gradient(135deg, rgba(72, 41, 54, .5), rgba(45, 12, 19, .2))'
 cover: /assets/images/2017-12-21/flow.jpg
+lang: zh-Hans
 ---
 
 Huginn 是北欧神话里，主神奥丁的一只乌鸦，每天乌鸦都会为奥丁获取全世界的新闻。 这也是基于 ruby 的 [Huginn](https://github.com/huginn/huginn){:target="_blank"} 所希望替用户做到的，在这个碎片化的时代替用户爬取和筛选任何互联网上信息。

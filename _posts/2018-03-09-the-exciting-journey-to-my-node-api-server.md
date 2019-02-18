@@ -3,12 +3,6 @@ key: 20180309
 modify_date: 2018-04-19
 tags: [Node, Let's Encrypt, RSS, Nginx, Docker, 中文]
 title: 记录学习使用 Node 搭建 API 服务器的路程
-article_header:
-  type: overlay
-  theme: dark
-  background_color: '#2d0c13'
-  background_image:
-    gradient: 'linear-gradient(135deg, rgba(72, 41, 54, .5), rgba(45, 12, 19, .2))'
 cover: /assets/images/2018-03-09/mindmap.png
 ---
 
