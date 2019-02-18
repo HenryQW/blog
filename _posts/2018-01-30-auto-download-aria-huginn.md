@@ -3,6 +3,7 @@ key: 20180130
 modify_date: 2018-01-30
 tags: [Huginn, aria2, web automation, 中文]
 title: 利用 Huginn 检测资源更新并触发 aria2 任务
+lang: zh-Hans
 ---
 
 利用 Huginn 检测资源更新并触发 aria2 任务，使用自动化解放双手。

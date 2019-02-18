@@ -4,6 +4,7 @@ modify_date: 2019-02-18
 tags: [Node, RSS, 中文]
 title: 向开源致敬：RSSHub - 万物皆可 RSS
 cover: /assets/images/2018-09-12/rsshub-contribution.png
+lang: zh-Hans
 ---
 
 Henry 同志现已加入 RSSHub 豪华贡献者大军。
