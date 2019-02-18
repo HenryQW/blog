@@ -3,11 +3,12 @@ key: 20180425
 modify_date: 2019-02-18
 tags: [Docker, TTRSS, English]
 title: A ttrss setup guide - Start your own RSS aggregator today
+cover: /assets/images/2018-04-25/ttrss.png
 ---
 
 This is a detailed guide to setup a fully running ttrss instance and explore its potential.
 
-The docker image is available at [GitHub](https://github.com/HenryQW/docker-ttrss-plugins){:target="_blank"} and [Docker Hub](https://hub.docker.com/r/wangqiru/ttrss/){:target="_blank"}
+The docker image is available at [GitHub](https://github.com/HenryQW/docker-ttrss-plugins){:target="_blank"} and [Docker Hub](https://hub.docker.com/r/wangqiru/ttrss/){:target="_blank"}.
 
 ![Docker Pulls](https://img.shields.io/docker/pulls/wangqiru/ttrss.svg)
 ![Docker Stars](https://img.shields.io/docker/stars/wangqiru/ttrss.svg)
