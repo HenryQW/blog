@@ -1,6 +1,6 @@
 ---
 key: 20180425
-modify_date: 2018-10-24
+modify_date: 2019-02-18
 tags: [Docker, TTRSS, English]
 title: A ttrss setup guide - Start your own RSS aggregator today
 ---
