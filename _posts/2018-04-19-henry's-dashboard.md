@@ -9,10 +9,12 @@ article_header:
   background_color: '#2d0c13'
   background_image:
     gradient: 'linear-gradient(135deg, rgba(72, 41, 54, .5), rgba(45, 12, 19, .2))'
-cover: /assets/images/2018-03-09/dashboard.jpg
+cover: /assets/images/2018-04-19/dashboard.jpg
 ---
 
 A boring dashboard with some frontend practices, [https://api.henry.wang](https://api.henry.wang){:target="_blank"}
+
+![The dashboard](/assets/images/2018-04-19/dashboard.jpg)
 
 <!--more-->
 

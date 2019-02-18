@@ -40,7 +40,7 @@ cover: /assets/images/2018-03-09/mindmap.png
 3. 抓取分享链接的全文，通过 Huginn 输出 RSS
 4. 基于 chartjs 的简单数据可视化，RSS 阅读量，huginn 工作量等
 5. All in one hub 式主页，聚合所有服务，[学习前端小知识]({% post_url 2018-04-19-henry's-dashboard %})
-![All in one hub 式主页](/assets/images/2018-03-09/dashboard.jpg)
+![All in one hub 式主页](/assets/images/2018-04-19/dashboard.jpg)
 
 # Technology
 
@@ -96,8 +96,6 @@ services:
 ### Documentation
 
 曾有使用 [jsdoc](http://usejsdoc.org/){:target="_blank"} 的经验，等到某一个稳定的版本后开始增加文档。同时寻找更优秀合适的替代品。
-
-#### 注
 
 [^1]:  [https://octoverse.github.com/](https://octoverse.github.com/){:target="_blank"} 
 [^2]:  [https://www.npmjs.com/](https://www.npmjs.com/){:target="_blank"} 
