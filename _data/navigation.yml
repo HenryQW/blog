@@ -17,18 +17,14 @@ header:
     url: /archive.html
 
   - titles:
-      en      : &EN       About
-      en-GB   : *EN
-      en-US   : *EN
-      en-CA   : *EN
-      en-AU   : *EN
-      zh-Hans : &ZH_HANS  关于
-      zh      : *ZH_HANS
-      zh-CN   : *ZH_HANS
-      zh-SG   : *ZH_HANS
-      zh-Hant : &ZH_HANT  關於
-      zh-TW   : *ZH_HANT
-      zh-HK   : *ZH_HANT
-      ko      : &KO       소개
-      ko-KR   : *KO
-    url: /about.html
+      en:       ✈️Travel
+      zh:       ✈️旅行️️️
+      zh-Hans:  ✈️旅行
+    url: https://travel.henry.wang
+
+  - titles:
+      en:       RSS
+      zh:       RSS
+      zh-Hans:  RSS
+      zh-Hant:  RSS
+    url: /feed.xml
