@@ -51,4 +51,14 @@ I will be working closely with my previous department and continuing my role as 
 
 &copy; [Swansea University Computational Foundry](https://www.flickr.com/people/142254929@N07/){:target="_blank"}
 
-Pending more photos as I'm still setting up my desk......
+<div class="grid grid--p-3">
+  <div class="cell cell--3">
+  </div>
+  <div class="cell cell--6">
+    <div class="card">
+      <div class="card__image">
+        <img class="image" src="/assets/images/2019-04-04/programmer.jpg"/>
+      </div>
+    </div>
+  </div>
+</div>
