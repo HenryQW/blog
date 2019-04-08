@@ -1,6 +1,6 @@
 ---
 key: 20180913
-modify_date: 2019-02-18
+modify_date: 2019-04-08
 tags: [Node, RSS, 中文]
 title: 向开源致敬：RSSHub - 万物皆可 RSS
 cover: /assets/images/2018-09-12/rsshub-contribution.png
@@ -51,7 +51,7 @@ Henry 同志现已加入 RSSHub 豪华贡献者大军。
 
 ## 贡献
 
-在花了几天理解了项目的代码后，8月7日我提交了第一个 PR，截止至9月12日，我共计提交了71个 PR，为 RSSHub 添加了：
+在花了几天理解了项目的代码后，8月7日我提交了第一个 PR，截止至2019年4月8日，我共计提交了[191个 PR](https://github.com/diygod/rsshub/pulls?q=is%3Apr+sort%3Aupdated-desc+author%3Ahenryqw+is%3Aclosed){:target="_blank"}，为 RSSHub 添加了：
 
 1. 添加了大量的实用路由，如：
     - [App Store 内购降价](https://docs.rsshub.app/#app-store-mac-app-store){:target="_blank"}

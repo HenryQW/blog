@@ -1,6 +1,6 @@
 ---
 key: 20171221
-modify_date: 2018-01-30
+modify_date: 2019-04-08
 tags: [Huginn, RSS, 知乎日报, 中文]
 title: 利用 Huginn 和知乎日报 API 制作全文 RSS
 cover: /assets/images/2017-12-21/flow.jpg
@@ -23,6 +23,7 @@ Huginn 是北欧神话里，主神奥丁的一只乌鸦，每天乌鸦都会为�
   - 即刻
   - Flipboard
   - 希望稍后阅读的文章
+  - [RSSHub](https://github.com/DIYgod/RSSHub){:target="_blank"}
 
 大多数主流媒体仍然提供 RSS 摘要作为引流途径，好在可以通过 [Mercury](https://mercury.postlight.com/web-parser/){:target="_blank"} 来获取文章全文（虽然开发者从不回复邮件），以省去每次跳转到网站的麻烦。
 
