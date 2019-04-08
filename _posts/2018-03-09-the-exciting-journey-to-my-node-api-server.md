@@ -10,9 +10,9 @@ cover: /assets/images/2018-03-09/mindmap.png
 
 <!--more-->
 
-# Introduction
+## Introduction
 
-## Background
+### Background
 
 作为重度 RSS 用户，由于 Google Reader 的关闭，不得不转向了自建 [TTRSS](https://tt-rss.org/){:target="_blank"} 的方案, 同时已经围绕着 RSS 阅读这个需求，陆续学习并搭建了不少服务：
 
@@ -27,18 +27,18 @@ cover: /assets/images/2018-03-09/mindmap.png
 
 ***终于基本实现了在一个 app 中阅读所有资讯的目标。***
 
-## Target
+### Target
 
 1. 学习使用 Node 的各种包搭建 API 服务器
-2. 学习 Node 下的单元测试
-3. 抓取分享链接的全文，通过 Huginn 输出 RSS
-4. 基于 chartjs 的简单数据可视化，RSS 阅读量，huginn 工作量等
-5. All in one hub 式主页，聚合所有服务，[学习前端小知识]({% post_url 2018-04-19-henry's-dashboard %})
+1. 学习 Node 下的单元测试
+1. 抓取分享链接的全文，通过 Huginn 输出 RSS
+1. 基于 chartjs 的简单数据可视化，RSS 阅读量，huginn 工作量等
+1. All in one hub 式主页，聚合所有服务，[学习前端小知识]({% post_url 2018-04-19-henry's-dashboard %})
 ![All in one hub 式主页](/assets/images/2018-04-19/dashboard.jpg)
 
-# Technology
+## Technology
 
-## Framework 
+### Framework
 
 Node express 号称可以在 10 分钟内搭建出一个 RESTful API server，选择了 express 而不是熟悉的 .NET MVC，则是因为：
 
@@ -47,17 +47,17 @@ Node express 号称可以在 10 分钟内搭建出一个 RESTful API server，�
 1. 650,000 已发布的包，日下载量近 1 亿 [^2]
 1. ~~C# 已经写吐了~~
 
-## Database
+### Database
 
 1. 重复使用已部署的 PostgreSQL，高可靠性与数据完整性你值得拥有
 1. 重复使用已部署的数据库备份逻辑
 
-## Testing & Integration
+### Testing & Integration
 
 1. 暂定学习 [mocha](https://mochajs.org/){:target="_blank"} 和 [chai](http://chaijs.com/){:target="_blank"}
 1. Travis CI
 
-## Deployment
+### Deployment
 
 Docker 毫不犹豫。
 

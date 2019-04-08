@@ -28,9 +28,9 @@ options: {
          }
 {% endhighlight %}
 
-# Solution
+## Solution
 
-## 1. Invoke the procedure
+### 1. Invoke the procedure
 
 A simple method serves as main method to kickoff the whole procedure. The absolute root path is extracted and used to replace relative paths.
 
@@ -61,7 +61,7 @@ A simple method serves as main method to kickoff the whole procedure. The absolu
 
 {% endhighlight %}
 
-## 2. Convert a View To HTML String
+### 2. Convert a View To HTML String
 
 HTML string is generated directly from a view.
 {% highlight C# %}
@@ -79,7 +79,7 @@ HTML string is generated directly from a view.
    }
 {% endhighlight %}
 
-## 3. Convert HTML string into byte array
+### 3. Convert HTML string into byte array
 
 {% highlight C# %}
    private byte[] ConvertPDF(string htmlRendered)
@@ -104,7 +104,7 @@ HTML string is generated directly from a view.
 
 {% endhighlight %}
 
-## 4. Register WkHtmlToXLibraries
+### 4. Register WkHtmlToXLibraries
 
 This registers WkHtmlToXLibraries for the corresponding platform, in this case, Win64.
 

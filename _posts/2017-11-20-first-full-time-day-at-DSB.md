@@ -17,7 +17,6 @@ I really appreciate the internship in which I learned numerous new things like c
 
 ---
 
-<!-- markdownlint-disable MD033 -->
 <div class="grid grid--p-3">
   <div class="cell cell--6">
     <div class="card">

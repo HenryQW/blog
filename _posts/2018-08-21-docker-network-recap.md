@@ -11,19 +11,19 @@ Recap on [Docker's Networking](https://docs.docker.com/network/), mostly Bridge 
 
 ---
 
-# Why
+## Why
 
 More than ever before, Docker is being adopted in both work (thank god) and personal project. It's painless to spin up a disposable container for testing business logic involves PostgreSQL, WebDAV or anything. And it's NINJA for deploying services for someone who doesn't know a thing about computers.
 
 I found myself constantly explaining docker network related things to others, such as *how does it know which xxx instance to connect*.
 
-# What I've Recapped
+## What I've Recapped
 
-## Bridge Network
+### Bridge Network
 
 So far the most commonly used network mode by me, I found it works perfectly for small to medium stack. Bridge can be further divided into `default` and `user-defined` networks.
 
-### Default
+#### Default
 
 > All containers were born bridged. -- Arisdocker
 
@@ -32,13 +32,12 @@ That is, if you don't specify anything, this default bridge driver will be used.
 Default bridge driver doesn't provide functionalities like `service discovery` and `DNS resolution`. Which means they can't talk to each other directly via container name, unless:
 
 1. they are linked via `--link` flag, this is being deprecated[^1] thus not recommended.
-2. the connection is established via IP address.
+1. the connection is established via IP address.
 
-### User-Defined
+#### User-Defined
 
 Unlike default, user-defined bridge network allows containers on the same to interpolate.
 
-<!-- markdownlint-disable MD033 -->
 <ol>
 <li>Create a docker network named `my-net`</li>
 
@@ -67,12 +66,12 @@ alpine ash
 The above containers:
 
 1. alpine1 can reach alpine2 by `ping alphine2` or `ping a2`.
-2. alpine2 can reach alpine1 by `ping alphine1`.
-3. alpine3 cannot reach anyone.
+1. alpine2 can reach alpine1 by `ping alphine1`.
+1. alpine3 cannot reach anyone.
 
 On top of that, containers within the same user-defined bridge network open up all ports to each other.
 
-## Host Network
+### Host Network
 
 Host network is as straightforward as the name suggests, all containers with a host network will have no network isolation, thus can be directly accessed via host_ip:container_port. Although no `service discovery` and `DNS resolution`will be provided, containers can use public ip address to communicate with each other.
 

@@ -11,7 +11,7 @@ mathjax: true
 
 <!--more-->
 
-# **S.O.L.I.D**
+## **S.O.L.I.D**
 
 The acronyms stands for:
 
@@ -23,7 +23,7 @@ The acronyms stands for:
 
 Recently I'm getting more actual practices on those principles with real life projects (via the heavy usage of interface), rather than just reading them on textbooks.
 
-## Single responsibility principle
+### Single responsibility principle
 
 ***A class should have one and only one reason to change***, meaning that a class should have only one job to do.
 {% highlight C# %}
@@ -83,7 +83,7 @@ public class OrderCalculator
 
 But hang on, this leads to the violation of next principle.
 
-## Open-closed principle
+### Open-closed principle
 
 ***Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.***
 
@@ -167,7 +167,7 @@ public class OrderCalculator
 
 This way we won't have to modify `CalculateDiscount()` each time when a new `Customer` type is added. Instead we just implement (extending not modifying) a new `IDiscount` and feed that into our `OrderCalculator`, `OrderCalculator` will return a different result even though its logic is unchanged. In this case, three memberships return different discount rates.
 
-## Liskov substitution principle
+### Liskov substitution principle
 
 > Let $$\phi(x) $$ be a property provable about objects $$x $$  of type $$T$$. Then $$\phi(y) $$ should be true for objects $$y $$ of type $$S$$ where $$S$$ is a subtype of $$T$$.
 
@@ -243,7 +243,7 @@ foreach (var dp in discounts)
 
 Since `PremiumDiscount` doesn't have the concrete implementation of `AddPromotionDiscount()`, this code snippet is syntactically correct but will still throw an exception during runtime. How do we avoid this? Let's look at [the next principle I](#interface-segregation-principle).
 
-## Interface segregation principle
+### Interface segregation principle
 
 ***No client should be forced to depend on methods it does not use.*** 
 
@@ -302,7 +302,7 @@ public class PremiumDiscount : IMembershipDiscount
 
 A graphical illustration of what's going on here:
 {% raw %}
-<!-- markdownlint-disable MD033 -->
+
 <p class="language-mermaid">
 graph LR;
     Basic(BasicDiscount)
@@ -351,10 +351,10 @@ foreach (var dp in discounts)
 
 `AddPromotionDiscount()` is an useless method for `PremiumDiscount`, therefore we shouldn't force it onto `PremiumDiscount`. By segregating `IDiscount` into two interfaces, we conform to the I. This structure now also satisfies [the L](#liskov-substitution-principle).
 
-## Dependency inversion principle
+### Dependency inversion principle
 
 1. ***High-level modules should not depend on low-level modules. Both should depend on abstractions.***
-2. ***Abstractions should not depend on details. Details should depend on abstractions.***
+1. ***Abstractions should not depend on details. Details should depend on abstractions.***
 
 As the project grows larger and larger, it will become extremely difficult to maintain if we don't decouple them properly, a small change in one base class could lead to a massive overhaul of its derived classes. We should make sure our business logics only depend on abstractions.
 
@@ -388,7 +388,7 @@ public class PostgresRepository : IDbRepository
 
 Since everything is based on the abstraction, it ensures that we don't rely on a single provider of service (like SMS and OAuth) and have the ability to switch between providers quickly without interrupting other parts of the application. This to a certain extent also conforms to [the S](#open-closed-principle).
 
-# Conclusion
+## Conclusion
 
 Because the flexibility interface provides, we use interface heavily during development to comply with S.O.L.I.D principles.  
 

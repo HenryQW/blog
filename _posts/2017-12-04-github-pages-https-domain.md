@@ -11,7 +11,7 @@ title: Enable HTTPS for GitHub Pages with custom domain
 
 ---
 
-Update: GitHub is now working with Let's Encrypt to [support HTTPS for custom domain](https://blog.github.com/2018-05-01-github-pages-custom-domains-https/).
+## Update: GitHub is now working with Let's Encrypt to [support HTTPS for custom domain](https://blog.github.com/2018-05-01-github-pages-custom-domains-https/)
 
 Simple adding at least one A record pointing the domain to any of the following:
 
@@ -20,9 +20,9 @@ Simple adding at least one A record pointing the domain to any of the following:
 - 185.199.110.153
 - 185.199.111.153
 
-# Workaround
+## Workaround
 
-## Nginx reverse proxy server
+### Nginx reverse proxy server
 
 Instead of using CNAME as suggested by [GitHub Help](https://help.github.com/articles/using-a-custom-domain-with-github-pages/){:target="_blank"}, I setup an Nginx reverse proxy to serve all the contents from GitHub repository.
 
@@ -33,7 +33,7 @@ location / {
 }
 {% endhighlight %}
 
-## Redirect all traffics to HTTPS
+### Redirect all traffics to HTTPS
 
 {% highlight Nginx %}
 
@@ -44,7 +44,7 @@ server {
 }
 {% endhighlight %}
 
-## Add SSL certificate
+### Add SSL certificate
 
 My 443 port is used by [sslh](https://github.com/yrutschle/sslh){:target="_blank"} for multiplexing, therefore 8443 is set as HTTPS port. Adding Let's Encrypt certificate to the configuration, and done!
 
@@ -63,7 +63,7 @@ server {
 }
 {% endhighlight %}
 
-## Conclusion
+### Conclusion
 
 The only down side is that your GitHub Pages doesn't redirect to your domain, but the rest will work just the same.
 

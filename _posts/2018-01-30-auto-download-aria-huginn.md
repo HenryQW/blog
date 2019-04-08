@@ -28,7 +28,6 @@ lang: zh-Hans
 
 - 在两个 `xpath` 中填入 Chrome 返回的 ubuntu 镜像种子链接的 XPath 路径：**//*[@id="main-content"]/div[3]//div[1]/ul/li[1]/a**，结果为
 
-<!-- markdownlint-disable MD033 -->
 {% highlight HTML %}
 <a class="download-torrent" href="http://releases.ubuntu.com/17.10/ubuntu-17.10.1-desktop-amd64.iso.torrent">
   Ubuntu 17.10.1 Desktop (64-bit)
@@ -71,7 +70,5 @@ http://releases.ubuntu.com/17.10/ubuntu-17.10.1-desktop-amd64.iso.torrent | Ubun
 Post Agent 同样可以用于推送触发通知，原理同上都是通过 http post，[Telegram](https://core.telegram.org/bots/api#making-requests){:target="_blank"} 和 [Slack](https://api.slack.com/incoming-webhooks#sending_messages){:target="_blank"} 都有对应的 API ，自行摸索即可。
 
 之前写了一个 Slack 的误删了，就懒得再写了。
-
-#### 注
 
 [^1]: 其他非重要的对应选项请参照 [Huginn 官方 wiki](https://github.com/huginn/huginn/wiki){:target="_blank"}

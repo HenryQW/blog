@@ -11,9 +11,9 @@ Make npm `phantomjs-prebuilt` package compatible with alpine-based docker image.
 
 ---
 
-# Problem
+## Problem
 
-## musl-libc vs glibc
+### musl-libc vs glibc
 
 alpine uses `musl-libc` as its C library instead of `glibc` to shrink down the image size and improve performance [^1].
 
@@ -27,9 +27,9 @@ It appears there is no fix for this even after so long.
 - [grafana-docker/issues/44](https://github.com/grafana/grafana-docker/issues/44){:target="_blank"}
 - [phantomjs-node/issues/702](https://github.com/amir20/phantomjs-node/issues/702){:target="_blank"}
 
-# Solution
+## Solution
 
-## Dockerize
+### Dockerize
 
 One approach is to [Dockerize](https://github.com/larsks/dockerize){:target="_blank"} phantomjs into linux executables inside a `glibc` compatible base (Debian or Ubuntu):
 
@@ -118,7 +118,5 @@ tar -zxf phantomjs.tar.gz /
 {% endhighlight %}
 
 `phantomjs-prebuilt` should now work fine in alpine-based docker containers. 
-
-### Footnote
 
 [^1]: [http://www.etalabs.net/compare_libcs.html](http://www.etalabs.net/compare_libcs.html){:target="_blank"}

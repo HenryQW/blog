@@ -20,14 +20,13 @@ The docker image is available at [GitHub](https://github.com/HenryQW/docker-ttrs
 
 ---
 
-# Introduction
+## Introduction
 
 Approximately 2 years ago I started using Docker to deploy my services, back then I was new to Docker and thus I used [rubenv's](https://github.com/rubenv/docker-ttrss-plugins){:target="_blank"} ttrss docker image. Later on I wrote a little PHP plugin for ttrss, [Mercury](https://github.com/HenryQW/mercury_fulltext){:target="_blank"}, which utilises [the API](https://mercury.postlight.com){:target="_blank"} from Postlight to extract fulltext of RSS feeds, as a replacement for that non-performant af_readability provided by ttrss. And I decided to integrate it into the image.
 
 Today the image is hitting over 100k pulls which surprises me, probably due to the recent Facebook & Cambridge Analytica scandal and the article [It's Time For an RSS Revival](https://www.wired.com/story/rss-readers-feedly-inoreader-old-reader/){:target="_blank"} by Wired.
 
-
-## Requirements
+### Requirements
 
 Bear in mind that this docker image isn't fully self-contained, it requires a database to work. If you want to assign it with an URL, you need an nginx web server too.
 
@@ -35,11 +34,11 @@ If you are using a machine with limited resources (RAM < 512MB) then you'd bette
 
 Personally I'd recommend running with Nginx and PostgreSQL.
 
-# Deployment and Configuration
+## Deployment and Configuration
 
-## The Easy Way
+### The Easy Way
 
-### docker-compose
+#### docker-compose
 
 There is an easy way to deploy which is via `docker-compose`. It was made available on 15 May [here](https://github.com/HenryQW/docker-ttrss-plugins/blob/master/docker-compose.yml){:target="_blank"}.
 
@@ -50,11 +49,11 @@ docker-compose up -d
 
 However, an nginx instance will most likely be required and a sample configuration is provided [below](#nginx).
 
-## The Not-So-Easy Way
+### The Not-So-Easy Way
 
 The not-so-easy way is to deploy two docker containers separately.
 
-### PostgreSQL
+#### PostgreSQL
 
 > If you already have a PostgreSQL instance running (docker or non-docker), you may skip this part.
 
@@ -73,7 +72,7 @@ docker run -d --name postgres --restart=always \
 sameersbn/postgresql:latest
 {% endhighlight %}
 
-### TTRSS
+#### TTRSS
 
 This links ttrss with the PostgreSQL container created just now and exposes port 181 to the public.
 
@@ -130,7 +129,7 @@ docker run -dit --name=ttrss --restart=always \
 wangqiru/ttrss
 {% endhighlight %}
 
-### Nginx
+#### Nginx
 
 This is an nginx config that forces all traffics through https and reverse proxies all requests into the ttrss container (inside it has its own nginx server listening to requests) created above.
 
@@ -180,16 +179,16 @@ server {
 }
 {% endhighlight %}
 
-## Plugin Settings
+### Plugin Settings
 
 The docker image comes with three plugins now:
 
 1. [Mercury](https://github.com/HenryQW/mercury_fulltext){:target="_blank"}
-2. [Fever](https://github.com/HenryQW/tinytinyrss-fever-plugin){:target="_blank"}
-3. [Feediron](https://github.com/feediron/ttrss_plugin-feediron){:target="_blank"}
-4. [OpenCC](https://github.com/HenryQW/ttrss_opencc){:target="_blank"}
+1. [Fever](https://github.com/HenryQW/tinytinyrss-fever-plugin){:target="_blank"}
+1. [Feediron](https://github.com/feediron/ttrss_plugin-feediron){:target="_blank"}
+1. [OpenCC](https://github.com/HenryQW/ttrss_opencc){:target="_blank"}
 
-### Mercury
+#### Mercury
 
 ~~It utilizes [Mercury Parser](https://mercury.postlight.com/web-parser/){:target="_blank"} to extract the full content for feeds. An API key is required to use this plugin, which is available for free [here](https://mercury.postlight.com/web-parser/){:target="_blank"}.~~
 
@@ -198,35 +197,35 @@ Mercury Parser API has stopped providing new API keys and existing keys will sto
 Steps to configure:
 
 1. Enable the plugin *mercury_fulltext* in **Preferences/Plugins**.
-2. Save your *Mercury API Endpoint* in the *Mercury_fulltext settings* under **Feeds** tab.
-3. Configure for feeds under **Plugins** tab of the **Edit Feed** window (you can right click your feed to get there).
+1. Save your *Mercury API Endpoint* in the *Mercury_fulltext settings* under **Feeds** tab.
+1. Configure for feeds under **Plugins** tab of the **Edit Feed** window (you can right click your feed to get there).
 
-### Fever
+#### Fever
 
 This simulates ttrss as a fever API, which is supported by many RSS readers. It is a part of [the docker-compose file](https://github.com/HenryQW/docker-ttrss-plugins/blob/master/docker-compose.yml){:target="_blank"}.
 
 Steps to configure:
 
 1. Check *Enable API access* in **Preferences/Preferences/General**.
-2. Enable the plugin *fever* in **Preferences/Plugins**.
-3. Enter a new password for accessing fever in **Preferences/Preferences/Fever Emulation**.
-4. Access the emulated fever API via *https://yoururl.com/plugins/fever* with your ttrss user and the password set in step 3.
+1. Enable the plugin *fever* in **Preferences/Plugins**.
+1. Enter a new password for accessing fever in **Preferences/Preferences/Fever Emulation**.
+1. Access the emulated fever API via *https://yoururl.com/plugins/fever* with your ttrss user and the password set in step 3.
 
-### Feediron
+#### Feediron
 
 If Mercury doesn't work well with the feed, you can use this to achieve the same goal.
 
 Unfortunately I'm not using this plugin because I use [Huginn](https://github.com/huginn/huginn){:target="_blank"} which provides more functionalities I need for other purposes (other than full text extraction). Please visit [its github](https://github.com/feediron/ttrss_plugin-feediron){:target="_blank"} for more information.
 
-### OpenCC
+#### OpenCC
 
 A plugin for conversion from Traditional to Simplified Chinese based on [OpenCC by BYVoid](https://github.com/BYVoid/OpenCC){:target="_blank"}
 
 Steps to configure:
 
 1. Enable the plugin *OpenCC* in **Preferences/Plugins**.
-2. Save your *OpenCC API Address* in the *OpenCC settings* under **Feeds** tab.
-3. Configure for feeds under **Plugins** tab of the **Edit Feed** window (you can right click your feed to get there).
+1. Save your *OpenCC API Address* in the *OpenCC settings* under **Feeds** tab.
+1. Configure for feeds under **Plugins** tab of the **Edit Feed** window (you can right click your feed to get there).
 
 There two demo instances for this plugin (availability is **not** guaranteed): [https://opencc.henry.wang](https://opencc.henry.wang) or [http://opencc2.henry.wang](http://opencc2.henry.wang)
 
@@ -236,7 +235,7 @@ Preferably, deploy your own OpenCC API Server via Docker:
 docker run -d -p 3000:3000 wangqiru/opencc_api_server
 {% endhighlight %}
 
-# Conclusion
+## Conclusion
 
 Now you should have a working ttrss instance. Forget algorithm-recommended newsfeeds/timelines, begin adding your feed!
 

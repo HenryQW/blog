@@ -19,7 +19,6 @@ I will be working closely with my previous department and continuing my role as 
 
 ---
 
-<!-- markdownlint-disable MD033 -->
 <div class="grid grid--p-3">
   <div class="cell cell--3">
   </div>
