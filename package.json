@@ -38,6 +38,8 @@
     "stylelint-config-recommended-scss": "^3.2.0",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-order": "^1.0.0",
-    "stylelint-scss": "^3.3.0"
+    "stylelint-scss": "^3.3.0",
+    "textlint": "^11.2.5",
+    "textlint-rule-ja-space-between-half-and-full-width": "^2.0.1"
   }
 }
