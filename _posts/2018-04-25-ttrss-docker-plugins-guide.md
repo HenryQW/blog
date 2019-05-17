@@ -1,6 +1,6 @@
 ---
 key: 20180425
-modify_date: 2019-02-18
+modify_date: 2019-05-17
 tags: [Docker, TTRSS, English]
 title: A ttrss setup guide - Start your own RSS aggregator today
 cover: /assets/images/2018-04-25/ttrss.png
@@ -8,7 +8,7 @@ cover: /assets/images/2018-04-25/ttrss.png
 
 This is a detailed guide to setup a fully running ttrss instance and explore its potential.
 
-The docker image is available at [GitHub](https://github.com/HenryQW/docker-ttrss-plugins){:target="_blank"} and [Docker Hub](https://hub.docker.com/r/wangqiru/ttrss/){:target="_blank"}.
+The docker image is available at [GitHub](https://github.com/HenryQW/Awesome-TTRSS){:target="_blank"} and [Docker Hub](https://hub.docker.com/r/wangqiru/ttrss/){:target="_blank"}.
 
 ![Docker Pulls](https://img.shields.io/docker/pulls/wangqiru/ttrss.svg)
 ![Docker Stars](https://img.shields.io/docker/stars/wangqiru/ttrss.svg)
@@ -40,9 +40,9 @@ Personally I'd recommend running with Nginx and PostgreSQL.
 
 #### docker-compose
 
-There is an easy way to deploy which is via `docker-compose`. It was made available on 15 May [here](https://github.com/HenryQW/docker-ttrss-plugins/blob/master/docker-compose.yml){:target="_blank"}.
+There is an easy way to deploy which is via `docker-compose`. It was made available on 15 May [here](https://github.com/HenryQW/Awesome-TTRSS/blob/master/docker-compose.yml){:target="_blank"}.
 
-It's as simple as download [the file](https://github.com/HenryQW/docker-ttrss-plugins/blob/master/docker-compose.yml){:target="_blank"} and run:
+It's as simple as download [the file](https://github.com/HenryQW/Awesome-TTRSS/blob/master/docker-compose.yml){:target="_blank"} and run:
 {% highlight bash %}
 docker-compose up -d
 {% endhighlight %}
@@ -192,7 +192,7 @@ The docker image comes with three plugins now:
 
 ~~It utilizes [Mercury Parser](https://mercury.postlight.com/web-parser/){:target="_blank"} to extract the full content for feeds. An API key is required to use this plugin, which is available for free [here](https://mercury.postlight.com/web-parser/){:target="_blank"}.~~
 
-Mercury Parser API has stopped providing new API keys and existing keys will stop working on April 15, 2019. It was made open source on GitHub: [postlight/mercury-parser-api](https://github.com/postlight/mercury-parser-api){:target="_blank"} and you can host your own Mercury Parser instance. I've made a dockerized self-host solution,[HenryQW/mercury-parser-api](https://github.com/HenryQW/mercury-parser-api){:target="_blank"}, which is now a part of [the docker-compose file](https://github.com/HenryQW/docker-ttrss-plugins/blob/master/docker-compose.yml){:target="_blank"}.
+Mercury Parser API has stopped providing new API keys and existing keys will stop working on April 15, 2019. It was made open source on GitHub: [postlight/mercury-parser-api](https://github.com/postlight/mercury-parser-api){:target="_blank"} and you can host your own Mercury Parser instance. I've made a dockerized self-host solution,[HenryQW/mercury-parser-api](https://github.com/HenryQW/mercury-parser-api){:target="_blank"}, which is now a part of [the docker-compose file](https://github.com/HenryQW/Awesome-TTRSS/blob/master/docker-compose.yml){:target="_blank"}.
 
 Steps to configure:
 
@@ -202,7 +202,7 @@ Steps to configure:
 
 #### Fever
 
-This simulates ttrss as a fever API, which is supported by many RSS readers. It is a part of [the docker-compose file](https://github.com/HenryQW/docker-ttrss-plugins/blob/master/docker-compose.yml){:target="_blank"}.
+This simulates ttrss as a fever API, which is supported by many RSS readers. It is a part of [the docker-compose file](https://github.com/HenryQW/Awesome-TTRSS/blob/master/docker-compose.yml){:target="_blank"}.
 
 Steps to configure:
 
