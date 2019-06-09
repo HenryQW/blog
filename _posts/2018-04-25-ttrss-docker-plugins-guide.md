@@ -1,6 +1,6 @@
 ---
 key: 20180425
-modify_date: 2019-05-17
+modify_date: 2019-06-09
 tags: [Docker, TTRSS, English]
 title: A ttrss setup guide - Start your own RSS aggregator today
 cover: /assets/images/2018-04-25/ttrss.png
@@ -137,7 +137,7 @@ ssl certificate can be obtained for free [here at Let's Encrypt](https://letsenc
 
 {% highlight nginx %}
 upstream ttrssdev {
-    server 127.0.0.1:3100;
+    server 127.0.0.1:181;
 }
 
 server {
