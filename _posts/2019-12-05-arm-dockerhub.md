@@ -8,6 +8,8 @@ tags: [Docker, English]
 
 Dockerhub by default doesn't support building arm-based images directly, but here is a trick to do so.
 
+![Cover](/assets/images/2019-12-05/armdocker.jpg)
+
 <!--more-->
 
 ---
