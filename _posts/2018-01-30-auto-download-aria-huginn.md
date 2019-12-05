@@ -16,7 +16,7 @@ lang: zh-Hans
 
 ### agent 参数 [^1]
 
-![Huginn Website Agent](/assets/images/2018-01-30/huginn_agent_1.png){: .center-image} 
+![Huginn Website Agent](/assets/images/2018-01-30/huginn_agent_1.png){: .center-image}
 
 #### XPath selector/选择器
 
@@ -24,7 +24,7 @@ lang: zh-Hans
 
 如果懒得学习 [XPath W3Schools 教程](https://www.w3schools.com/xml/xpath_intro.asp){:target="_blank"}，可以通过浏览器控制台获取 XPath 绝对路径，但有时候 Huginn 会无法识别浏览器自动抓取的 XPath 路径。
 
-![浏览器控制台获取 XPath 路径](/assets/images/2018-01-30/xpath-selector.png){: .center-image} 
+![浏览器控制台获取 XPath 路径](/assets/images/2018-01-30/xpath-selector.png){: .center-image}
 
 - 在两个 `xpath` 中填入 Chrome 返回的 ubuntu 镜像种子链接的 XPath 路径：**//*[@id="main-content"]/div[3]//div[1]/ul/li[1]/a**，结果为
 
