@@ -72,3 +72,10 @@ Post Agent 同样可以用于推送触发通知，原理同上都是通过 http 
 之前写了一个 Slack 的误删了，就懒得再写了。
 
 [^1]: 其他非重要的对应选项请参照 [Huginn 官方 wiki](https://github.com/huginn/huginn/wiki){:target="_blank"}
+
+<style>
+.center-image {
+    margin: auto;
+    display: table;
+}
+</style>

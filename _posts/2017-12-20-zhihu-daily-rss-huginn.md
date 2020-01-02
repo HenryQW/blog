@@ -144,3 +144,10 @@ Huginn 会输出两个 RSS 源地址，分别为 XML 和 JSON 格式。
 - [https://bot.henry.wang/scenarios/4/export.json](https://bot.henry.wang/scenarios/4/export.json){:target="_blank"}
 
 [^1]: 其他非重要的对应选项请参照 [Huginn 官方 wiki](https://github.com/huginn/huginn/wiki){:target="_blank"}
+
+<style>
+.center-image {
+    margin: auto;
+    display: table;
+}
+</style>
