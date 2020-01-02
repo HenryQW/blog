@@ -6,7 +6,7 @@ article_header:
   background_image:
     src: /assets/images/2017-11-20/Setup.jpg
 cover: /assets/images/2017-11-20/Medical-School-Swansea-University.jpg
-tags: [Life, English]
+tags: [Life, English, UK]
 ---
 
 <!--more-->
