@@ -20,7 +20,7 @@ tags: [Life, UK]
 
 | 平台                                                                                        | 支持 ISA | 支持 fractional share | 支持 ETF                                                                                                                          | 货币转换费 | 托管费   | 资产保护 |
 | ------------------------------------------------------------------------------------------- | -------- | --------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ---------- | -------- | -------- |
-| ![Trading212 icon](/assets/images/2020-01-01/trading212-icon.jpg){:width="25px"} Trading212 | ✅ 免费  | ✅ 美股               | ✅ 187                                                                                                                            | 0.5%       | 0        | FSCS     |
+| ![Trading212 icon](/assets/images/2020-01-01/trading212-icon.jpg){:width="25px"} Trading212 | ✅ 免费  | ✅ 美股，欧股，ETF               | ✅ 187                                                                                                                            | 无       | 0        | FSCS     |
 | ![Freetrade icon](/assets/images/2020-01-01/freetrade-icon.jpg){:width="25px"} Freetrade    | ✅ £3/月 | ✅ 美股               | ✅ 45 [见列表](https://docs.google.com/spreadsheets/d/1o9Yu0BZHmL5eC_GqNTW47zvvW6AiXaB6CYnG8JRzRSw/edit#gid=0){:target="\_blank"} | 0.45%      | 0        | FSCS     |
 | ![Revolut icon](/assets/images/2020-01-01/revolut-icon.jpg){:width="25px"} Revolut          | ❌       | ✅ 美股               | ❌                                                                                                                                | 无         | 0.01%/年 | EDIS     |
 
@@ -39,7 +39,7 @@ Individual Savings Accounts (ISA) 的重要性不必多说，关于 ISA 的几�
 
 ### 支持 fractional share
 
-Fractional share 是一种可以让你买得起高价股的手段，比如 Amazon 每股价格 1800 美金，通过 fractional share 即可花 180 美金购买 0.1 股，根据个人资产进行合理配比。三大平台均支持美股 fractional share。
+Fractional share 是一种可以让你买得起高价股的手段，比如 Amazon 每股价格 1800 美金，通过 fractional share 即可花 180 美金购买 0.1 股，根据个人资产进行合理配比。三大平台均支持部份美股 fractional share。Trading212 支持部份欧股，以及部份 ETF。
 
 ### 支持 ETF
 
@@ -51,7 +51,7 @@ ETF 数量较少，只覆盖了部份比较 popular 的 ETF，这也是免费平
 
 传统英国券商的货币转换费实在吓人，像著名的 HL 和 AJ 都是 1% 。各大银行的券商更是夸张，汇率不透明不说，转换费也更高。
 
-三个平台中，Trading212 本身支持外汇交易，所以可以提供 0.5% 的货币转换费，且汇率来自外汇交易市场。
+三个平台中，Trading212 本身支持外汇交易，汇率来自外汇交易市场。~~收取 0.5% 的货币转换费~~，2020年1月2日客服证实，非杠杆股票交易免货币转换费，曾经在网站上列出的 0.5% 货币转换费实际从未收取。
 
 Freetrade 为 0.45%，汇率与外汇交易市场的实时汇率差距不大，有时甚至更好。
 
@@ -137,7 +137,7 @@ Freetrade 是根正苗红的互联网 fintech 企业，仅支持移动端 app �
 
 ## 个人经验
 
-Trading212 ISA 的每年限额，目前我个人策略为通过 Revolut 持美股 🇺🇸，正好我也是 Revolut Metal，但是这意味着在每年的 Capital Gain Tax allowance 之后的利润需要上缴相应税率的资本利得税。Trading212 ISA 投资欧洲 🇪🇺 市场以及 Revolut 中不支持的美股。这一组合帮助我最大幅度利用了 ISA 免税额，同时规避了大量货币转换费，未来也可以以低成本调节持仓。
+Trading212 ISA 的每年限额，目前我个人策略为通过 Revolut 持美股 🇺🇸，正好我也是 Revolut Metal，但是这意味着在每年的 Capital Gain Tax allowance 之后的利润需要上缴相应税率的资本利得税。Trading212 ISA 投资欧洲 🇪🇺 市场以及 Revolut 中不支持的美股。这一组合帮助我最大幅度利用了 ISA 免税额，同时规避了于英镑贬值带来的风险，未来也可以以美元灵活调节持仓。
 
 虽然个人看好 Freetrade 的未来成长，但是由于它的交易模式，目前并没有通过该平台进行投资，而是参加了它的第五轮众筹。
 
