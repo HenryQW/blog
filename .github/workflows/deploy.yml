@@ -17,3 +17,5 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         gh_pages_token: ${{ secrets.GH_PAGES_TOKEN }}
         gh_pages_commit_message: "Deploy Jekyll."
+        lean_key: ${{ secrets.LEAN_KEY }}
+        gitalk_secret: ${{ secrets.GITALK_SECRET }}
