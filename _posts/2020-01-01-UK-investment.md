@@ -1,6 +1,6 @@
 ---
 key: 20200101
-modify_date: 2020-01-01
+modify_date: 2020-03-06
 title: 英国免手续费炒股平台对比
 cover: /assets/images/2020-01-01/stock.jpg
 tags: [Life, UK]
