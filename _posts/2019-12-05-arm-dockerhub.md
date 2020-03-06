@@ -16,7 +16,7 @@ Dockerhub by default doesn't support building arm-based images directly, but her
 
 ## Update: GitHub Actions for the Win
 
-I've switched to GitHub Actions, which provide far more superior experience than dockerhub. Below are the GitHub Actions used for releasing my Awesome-TTRSS.
+I've switched to GitHub Actions, which provide a far more superior experience than dockerhub. Below are the GitHub Actions used for releasing my Awesome-TTRSS.
 
 ```yml
 {% raw %}
@@ -73,29 +73,29 @@ We first create a folder `hooks` at the root directory, and,
 
 1. A `post_checkout` file with the following content:
 
-    ```bash
-    #!/bin/bash
-    curl -L https://github.com/balena-io/qemu/releases/download/v3.0.0%2Bresin/qemu-3.0.0+resin-arm.tar.gz | tar zxvf - -C . && mv qemu-3.0.0+resin-arm/qemu-arm-static .
-    ```
+   ```bash
+   #!/bin/bash
+   curl -L https://github.com/balena-io/qemu/releases/download/v3.0.0%2Bresin/qemu-3.0.0+resin-arm.tar.gz | tar zxvf - -C . && mv qemu-3.0.0+resin-arm/qemu-arm-static .
+   ```
 
-    This instructs dockerhub to pull the qemu emulator[^2] by balena.io and untar it.
+   This instructs dockerhub to pull the qemu emulator[^2] by balena.io and untar it.
 
 1. A `pre_build` file with the following content:
 
-    ```bash
-    #!/bin/bash
-    docker run --rm --privileged multiarch/qemu-user-static:register --reset
-    ```
+   ```bash
+   #!/bin/bash
+   docker run --rm --privileged multiarch/qemu-user-static:register --reset
+   ```
 
-    This instructs dockerhub to execute the register script for the emulator with the binfmt module.
+   This instructs dockerhub to execute the register script for the emulator with the binfmt module.
 
 1. Add the following to the very top of your Dockerfile, right after the `From` statement:
 
-    ```bash
-    COPY qemu-arm-static /usr/bin
-    ```
+   ```bash
+   COPY qemu-arm-static /usr/bin
+   ```
 
-    This instructs dockerhub to copy the resulting qemu-arm-static binary to the building instance.
+   This instructs dockerhub to copy the resulting qemu-arm-static binary to the building instance.
 
 dockerhub should happily builds your arm-based images now.
 
