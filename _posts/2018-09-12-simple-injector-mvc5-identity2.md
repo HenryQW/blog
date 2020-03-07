@@ -3,6 +3,8 @@ key: 20180912
 modify_date: 2018-09-12
 tags: [C#, MVC, English]
 title: Simple Injector with ASP.NET MVC 5 Identity 2.0
+article_header:
+  background_image: false
 ---
 
 One reason I love .NET Core is the out-of-box dependency injection it provides. Unfortunately I'm not allowed to use .NET Core due to some backward compatibility requirements.

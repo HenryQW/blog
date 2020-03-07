@@ -3,6 +3,8 @@ key: 20171204
 modify_date: 2018-05-14
 tags: [GitHub, Nginx, Let's Encrypt, English]
 title: Enable HTTPS for GitHub Pages with custom domain
+article_header:
+  background_image: false
 ---
 
 ~~[GitHub Pages](https://pages.github.com){:target="\_blank"} doesn't support HTTPS for sites with custom domain.~~ There is an easy workaround, which involves [Let's Encrypt](https://letsencrypt.org){:target="\_blank"} and [Nginx](https://nginx.org){:target="\_blank"}.

@@ -3,6 +3,8 @@ key: 20171121
 modify_date: 2017-12-04
 tags: [C#, MVC, chart.js, English]
 title: MVC convert HTML with Chart.js to PDF using WkHtmlToXSharp
+article_header:
+  background_image: false
 ---
 
 Using [WkHtmlToXSharp](https://github.com/pruiz/WkHtmlToXSharp){:target="_blank"} to convert HTML files, that contain charts rendered by [Chart.js](http://www.chartjs.org/){:target="_blank"}, into PDF. Plus a simple download function using **System.IO.MemoryStream**

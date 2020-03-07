@@ -5,6 +5,8 @@ tags: [Software Design, C#, English]
 title: S.O.L.I.D Principles
 mermaid: true
 mathjax: true
+article_header:
+  background_image: false
 ---
 
 **S.O.L.I.D** Principles is also known as **the first five object-oriented design(OOD) principles**, to improve software maintainability and extensibility. Introduced by Uncle Bob (Robert C. Martin), those principles are indispensible for my daily DevOps life.

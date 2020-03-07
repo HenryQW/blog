@@ -3,6 +3,8 @@ key: 20180312
 modify_date: 2018-03-12
 tags: [C#, MVC, English]
 title: ASP.NET Core Scaffolding Bug for separated projects
+article_header:
+  background_image: false
 ---
 
 A quick fix for ASP.NET Core Scaffolding Bug for separated DbContext & Model.

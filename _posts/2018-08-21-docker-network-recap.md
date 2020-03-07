@@ -3,6 +3,8 @@ key: 20180821
 modify_date: 2018-09-04
 tags: [Docker, English]
 title: Docker Network Recap
+article_header:
+  background_image: false
 ---
 
 Recap on [Docker's Networking](https://docs.docker.com/network/), mostly Bridge Network.
