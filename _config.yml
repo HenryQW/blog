@@ -117,7 +117,7 @@ comments:
   gitalk:
     clientID: 583d71112097971f54a3
     clientSecret: e288a7631c207c6a83b16c81c0f14658c6304a3c
-    repository: HenryQW.github.io
+    repository: blog
     owner: HenryQW
     admin: HenryQW
 
