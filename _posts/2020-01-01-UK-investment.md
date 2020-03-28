@@ -85,7 +85,7 @@ Freetrade 和 Revolut 会在你开户时主动要求你提交改表格。
 
 Trading212 在 app 内提供几乎实时回复的真人客服，回复专业且及时。我用过几次，体验非常好。
 
-Freetrade 和 Revolut 的客服回复速度则看人品，少则几小时多则几个工作日。Revolut Metal 由于有优先客服通道，所以回复速度比较快，基本不会出现 1 个工作日内部回复的情况。
+Freetrade 和 Revolut 的客服回复速度则看人品，少则几小时多则几个工作日。Revolut Metal 由于有优先客服通道，所以回复速度比较快，基本不会出现 1 个工作日内无回复的情况。
 
 ## 三个平台的短板
 
@@ -93,7 +93,7 @@ Freetrade 和 Revolut 的客服回复速度则看人品，少则几小时多则�
 
 作为年轻的平台，短板自然不少。其中可选股与 ETF 的数量就被传统券商甩了一条街。
 
-Trading212 目前总共支持来自美国 🇺🇸，英国 🇬🇧，德国 🇩🇪，荷兰 🇳🇱（最好现在开始叫她尼德兰？），法国 🇫🇷，西班牙 🇪🇸，瑞士 🇨🇭 共计 1802 支股票（数量每周都在增加）。
+Trading212 目前总共支持来自美国 🇺🇸，英国 🇬🇧，德国 🇩🇪，荷兰 🇳🇱（最好现在开始叫她尼德兰？），法国 🇫🇷，西班牙 🇪🇸，瑞士 🇨🇭 共计 1840 支股票（数量每周都在增加）。
 
 Freetrade 仅支持美国 🇺🇸 和英国 🇬🇧 共计 618 支股票，并不定期缓慢增加中。[官方列表在此](https://docs.google.com/spreadsheets/d/1-5eYQWyWLyRCiqgHpiqjSmCayLjODvDvVEHWRjW5VjM/edit#gid=633653636){:target="\_blank"}。
 
@@ -105,7 +105,7 @@ Revolut 仅支持美国 🇺🇸 股票，目测也就 300 支左右，覆盖了
 
 只有 Trading212 提供限价单支持，交易单数完全无限制。
 
-Revolut 仅支持市价交易，这点非常蛋疼。并且 Revolut 免费用户每月只能执行 3 笔免费交易，额外交易 £1/笔。Premium（£6.99/月）为免费 8 笔，Metal （£12.99/月）无限制。不得不提一句，用作旅行卡 Revolut 真香。
+Revolut 仅支持市价交易，这点非常蛋疼。并且 Revolut 免费用户每月只能执行 3 笔免费交易，额外交易 £1/笔。Premium（£6.99/月）为免费 8 笔，Metal （£12.99/月）无限制。不得不提一句，用作旅行卡 Revolut 真香。** Revolut 目前经常性出现交易延迟几分钟的现象，强烈建议短线操作不要使用 Revolut。**
 
 ~~Freetrade 的交易模式就更蛋疼了，免费交易称为 basic trade，每天伦敦时间 15 点左右集合交易。而市价交易称为 instant trade 为 £1/笔。~~ Freetrade 市价交易自 2020 年 2 月 27 日起免费。
 
@@ -156,9 +156,11 @@ Trading212 还有一个小彩蛋，可以通过 Visa/MasterCard 信用卡充值�
 
 ## 邀请链接
 
-这里是我的 Trading212 ISA 的[邀请链接](www.trading212.com/invite/xG5f5){:target="\_blank"}，通过该链接注册并存入 £1，双方都可以获得价值最高 £100 的股票一只。
+这里是我的 Trading212 ISA 的[邀请链接](https://www.trading212.com/invite/xG5f5){:target="\_blank"}，通过该链接**注册账户后**存入至少 £1，双方都可以获得价值最高 £100 的股票一只。
 
 Revolut 的[邀请链接](https://revolut.com/referral/qiru4qk){:target="\_blank"}，开卡包邮，环球旅行必备。
+
+Freetrade 不定期有邀请链接，也是赠送最高 £100 的股票一只，可以[通过 telegram 联系我看看](https://t.me/HenryQW){:target="\_blank"}是否有邀请名额。
 
 ---
 
