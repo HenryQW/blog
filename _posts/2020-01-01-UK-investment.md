@@ -1,6 +1,6 @@
 ---
 key: 20200101
-modify_date: 2020-10-09
+modify_date: 2021-04-05
 title: 英国免手续费炒股平台对比
 cover: /assets/images/2020-01-01/stock.jpg
 tags: [Life, UK]
@@ -22,7 +22,7 @@ tags: [Life, UK]
 
 | 平台                                                                                        | 支持 ISA | 支持 fractional share | 支持 ETF                                                                                                                          | 货币转换费 | 托管费   | 资产保护 |
 | ------------------------------------------------------------------------------------------- | -------- | --------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ---------- | -------- | -------- |
-| ![Trading212 icon](/assets/images/2020-01-01/trading212-icon.jpg){:width="25px"} Trading212 | ✅ 免费  | ✅ 美股，欧股，ETF    | ✅ 453                                                                                                                            | 无         | 0        | FSCS     |
+| ![Trading212 icon](/assets/images/2020-01-01/trading212-icon.jpg){:width="25px"} Trading212 | ✅ 免费  | ✅ 美股，欧股，ETF    | ✅ 453                                                                                                                            | 0.15%         | 0        | FSCS     |
 | ![Freetrade icon](/assets/images/2020-01-01/freetrade-icon.jpg){:width="25px"} Freetrade    | ✅ £3/月 | ✅ 美股               | ✅ 45 [见列表](https://docs.google.com/spreadsheets/d/1o9Yu0BZHmL5eC_GqNTW47zvvW6AiXaB6CYnG8JRzRSw/edit#gid=0){:target="\_blank"} | 0.45%      | 0        | FSCS     |
 | ![Revolut icon](/assets/images/2020-01-01/revolut-icon.jpg){:width="25px"} Revolut          | ❌       | ✅ 美股               | ❌                                                                                                                                | 无         | 0.01%/年 | EDIS     |
 
@@ -53,7 +53,7 @@ Trading212 支持 25 支贵金属和原油 ETF。
 
 传统英国券商的货币转换费实在吓人，像著名的 HL 和 AJ 都是 1% 。各大银行的券商更是夸张，汇率不透明不说，转换费也更高。
 
-三个平台中，Trading212 本身支持外汇交易，汇率来自外汇交易市场。~~收取 0.5% 的货币转换费~~，2020 年 1 月 2 日客服证实，非杠杆股票交易免货币转换费，曾经在网站上列出的 0.5% 货币转换费实际从未收取。
+三个平台中，Trading212 本身支持外汇交易，汇率来自外汇交易市场。~~收取 0.5% 的货币转换费~~，2020 年 1 月 2 日客服证实，非杠杆股票交易免货币转换费，曾经在网站上列出的 0.5% 货币转换费实际从未收取。2021 年 4 月 3 日：Trading212 非 CFD 账户（指 ISA 及普通投资账户）将对所有非本币交易收取 0.15% 的货币转换费。
 
 Freetrade 为 0.45%，汇率与外汇交易市场的实时汇率差距不大，有时甚至更好。
 
@@ -201,7 +201,7 @@ Trading212 还有一个小彩蛋，可以通过 Visa/MasterCard 信用卡充值�
 
 这里是我的 Trading212 ISA 的 [邀请链接](https://www.trading212.com/invite/xG5f5){:target="\_blank"}，通过该链接**注册账户后**存入至少 £1，双方都可以获得价值最高 £100 的股票一只。P.S. 通过该链接注册**你仍然可以获得奖励**，但我已经达到邀请上限，不会再收到邀请奖励。
 
-Freetrade 的[邀请链接](https://magic.freetrade.io/join/qiru/5937b19a)，赠送最高 £200 的股票一只。
+Freetrade 的 [邀请链接](https://magic.freetrade.io/join/qiru/5937b19a)，赠送最高 £200 的股票一只。
 
 Revolut 的 [邀请链接](https://revolut.com/referral/qiru4qk){:target="\_blank"}，开卡包邮，环球旅行必备。
 
