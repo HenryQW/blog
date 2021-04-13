@@ -205,6 +205,10 @@ Freetrade 的 [邀请链接](https://magic.freetrade.io/join/qiru/5937b19a)，�
 
 Revolut 的 [邀请链接](https://revolut.com/referral/qiru4qk){:target="\_blank"}，开卡包邮，环球旅行必备。
 
+插播一则相关性较低的邀请链接：
+
+Octopus Energy，英国最便宜的电力和天然气（tariff+standing charge）供应商之一，在 Midlands 地区比 Bulb 还便宜。100%可再生能源（能源来自于 Octopus 旗下的可再生能源发电设施，LSE:ORIT，目前股息率 3.8%），trustpilot 4.8/5 星好评，英国最著名消费者杂志 which? 推荐的能源供应商。在线账户管理界面特别友好，客服响应速度很快。通过 [邀请链接](https://share.octopus.energy/beige-bat-137){:target="\_blank"}一键快速 switch，双方都能得到 £50 credit。投资是开源，switch 到更便宜的供应商就是节流了。
+
 ---
 
 最后，祝大家 2020 💰 财运亨通。
