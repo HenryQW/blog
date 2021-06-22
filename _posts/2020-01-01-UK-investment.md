@@ -114,7 +114,7 @@ Trading212 提供限价单支持，交易单数完全免费无限制。 值得�
 ![Trading212 Pie](/assets/images/2020-01-01/trading212-pie.jpg){: .center-image}
 _Trading212 Pie 模式。_{:.image-caption}
 
-Revolut 提供限价单支持，但 Revolut 免费用户每月只能执行 3 笔免费交易，额外交易 £1/笔。Premium（£6.99/月）为免费 8 笔，Metal （£12.99/月）无限制。不得不提一句，用作旅行卡 Revolut 真香。
+Revolut 提供限价单支持，但 Revolut 免费用户每月只能执行 3 笔免费交易，额外交易 £1/笔。Premium（£6.99/月）为免费 8 笔，Metal （£12.99/月）无限制。
 
 Freetrade 限价单需要 Freetrade Plus 会员（£9.99/月）。
 
@@ -182,7 +182,7 @@ Freetrade 是根正苗红的互联网 Fintech 企业，仅支持移动端 app �
 
 ## 个人平台使用策略
 
-2021 年 6 月：主力使用 Trading212 ISA，达到当年上限后使用 Freetrade。
+2021 年 6 月：主力使用 Trading212 ISA，达到当年上限后使用 Freetrade。由于 Revolut 客服质量以及态度急转直下，我已经放弃该平台。
 
 个人看好 Freetrade 的未来成长，参加了它的第五轮众筹。
 
