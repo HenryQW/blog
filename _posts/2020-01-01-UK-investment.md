@@ -1,6 +1,6 @@
 ---
 key: 20200101
-modify_date: 2021-04-05
+modify_date: 2021-06-22
 title: 英国免手续费炒股平台对比
 cover: /assets/images/2020-01-01/stock.jpg
 tags: [Life, UK]
@@ -16,14 +16,14 @@ tags: [Life, UK]
 
 文章更新于 2020 年 10 月 9 日。
 
-18 年 5 月开始在英国炒股，慢慢对比了在英国的各大券商平台。在美国有 Robin Hood，M1 Finance 这些比较有名的 fee-free 平台，在英国 fee-free 的平台起步还是比较慢的。传统的券商货币转换费，托管费，交易佣金高的吓人，高昂的手续费可以轻易抹平小资产散户的收益。一部分是因为国外是以机构为主，散户只占少数。另一部分是相比下，大部分英国平民百姓的自我理财意识实在是差。
+18 年 5 月开始在英国炒股，慢慢对比了在英国的各大券商平台。在美国有 RobinHood，M1 Finance 这些比较有名的 fee-free 平台，在英国 fee-free 的平台起步还是比较慢的。传统的券商货币转换费，托管费，交易佣金高的吓人，高昂的手续费可以轻易抹平小资产散户的收益。一部分是因为国外是以机构为主，散户只占少数。另一部分是相比下，大部分英国平民百姓的自我理财意识实在是差。
 
 ## Overview
 
 | 平台                                                                                        | 支持 ISA | 支持 fractional share | 支持 ETF                                                                                                                          | 货币转换费 | 托管费   | 资产保护 |
 | ------------------------------------------------------------------------------------------- | -------- | --------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ---------- | -------- | -------- |
-| ![Trading212 icon](/assets/images/2020-01-01/trading212-icon.jpg){:width="25px"} Trading212 | ✅ 免费  | ✅ 美股，欧股，ETF    | ✅ 453                                                                                                                            | 0.15%         | 0        | FSCS     |
-| ![Freetrade icon](/assets/images/2020-01-01/freetrade-icon.jpg){:width="25px"} Freetrade    | ✅ £3/月 | ✅ 美股               | ✅ 45 [见列表](https://docs.google.com/spreadsheets/d/1o9Yu0BZHmL5eC_GqNTW47zvvW6AiXaB6CYnG8JRzRSw/edit#gid=0){:target="\_blank"} | 0.45%      | 0        | FSCS     |
+| ![Trading212 icon](/assets/images/2020-01-01/trading212-icon.jpg){:width="25px"} Trading212 | ✅ 免费  | ✅ 美股，欧股，ETF    | ✅                                                                                                                       | 0.15%         | 0        | FSCS     |
+| ![Freetrade icon](/assets/images/2020-01-01/freetrade-icon.jpg){:width="25px"} Freetrade    | ✅ £3/月 | ✅ 美股               | ✅ 45 | 0.45%      | 0        | FSCS     |
 | ![Revolut icon](/assets/images/2020-01-01/revolut-icon.jpg){:width="25px"} Revolut          | ❌       | ✅ 美股               | ❌                                                                                                                                | 无         | 0.01%/年 | EDIS     |
 
 由于我不投资 bonds，这块暂不对比。
@@ -35,7 +35,7 @@ Individual Savings Accounts (ISA) 的重要性不必多说，关于 ISA 的几�
 1. 每年 4 月 5 日是财年截止
 1. 每个财年内每人可以开 Stocks and Shares ISA，Cash ISA，Innovative Finance ISA 各一个
 1. 每个财年内每人只可以往同种类一个 ISA 中存钱
-1. ISA 每年额度会提高，19/20 财年是 2 万磅，存入的钱取出后额度不返还
+1. ISA 每年额度会提高，20/21 财年是 2 万磅，存入的钱取出后额度不返还
 
 三个平台中，Trading212 提供免费 ISA，Freetrade ISA £3/月，而 Revolut 暂不支持 ISA。
 
@@ -87,27 +87,29 @@ Freetrade 和 Revolut 会在你开户时主动要求你提交改表格。
 
 Trading212 在 app 内提供几乎实时回复的真人客服，回复专业且及时。我用过几次，体验非常好。
 
-Freetrade 和 Revolut 的客服回复速度则看人品，少则几小时多则几个工作日。Revolut Metal 由于有优先客服通道，所以回复速度比较快，基本不会出现 1 个工作日内无回复的情况。
+~~Freetrade 和 Revolut 的客服回复速度则看人品，少则几小时多则几个工作日。Revolut Metal 由于有优先客服通道，所以回复速度比较快，基本不会出现 1 个工作日内无回复的情况。~~
+
+2021 年 6 月更新：**基于多次个人经历，Revolut 客服质量以及态度急转直下**，今年年底我将不再续订 Revolut Metal。相比之下，Freetrade 的客服质量稳步提升。
 
 ## 三个平台的短板
 
 ### 股票数量
 
-作为年轻的平台，短板自然不少。其中可选股与 ETF 的数量就被传统券商甩了一条街。
+~~作为年轻的平台，短板自然不少。其中可选股与 ETF 的数量就被传统券商甩了一条街。~~
 
-Trading212 目前总共支持来自美国 🇺🇸，英国 🇬🇧，德国 🇩🇪，荷兰 🇳🇱（最好现在开始叫她尼德兰？），法国 🇫🇷，西班牙 🇪🇸，瑞士 🇨🇭 共计 2910 支股票。
+FinTech 初创企业现已具备与传统券商从各方面对抗的实力。
 
-Freetrade 仅支持美国 🇺🇸 和英国 🇬🇧 共计 2703 支股票，并不定期缓慢增加中。[官方列表在此](https://docs.google.com/spreadsheets/d/14Ep-CmoqWxrMU8HshxthRcdRW8IsXvh3n2-ZHVCzqzQ/edit#gid=1855920257){:target="\_blank"}。
+Trading212 目前总共支持来自美国 🇺🇸，英国 🇬🇧，德国 🇩🇪，荷兰 🇳🇱（最好现在开始叫她尼德兰？），法国 🇫🇷，西班牙 🇪🇸，瑞士 🇨🇭 超过 10000 支股票以及 ETF。
 
-Revolut 仅支持美国 🇺🇸 股票，目测也就 500 支左右，覆盖了各大行业龙头股以及部分中小盘，对中概股 🇨🇳 的支持倒是较为全面，甚至还有中通快递。
+Freetrade 支持美国 🇺🇸 和英国 🇬🇧 共计 4805 支股票，并不定期缓慢增加中。[官方列表在此](https://docs.google.com/spreadsheets/d/14Ep-CmoqWxrMU8HshxthRcdRW8IsXvh3n2-ZHVCzqzQ/edit#gid=1855920257){:target="\_blank"}。
 
-~~传统券商动辄全球股市几千只可选股，不是一朝一夕可以赶上的。~~ Fintech 追赶的速度很快啊！
+~~Revolut 仅支持美国 🇺🇸 股票，目测也就 500 支左右，覆盖了各大行业龙头股以及部分中小盘，对中概股 🇨🇳 的支持倒是较为全面，甚至还有中通快递。~~
+
+2021 年 6 月更新：由于 Revolut 客服质量以及态度急转直下，我已经放弃该平台。
 
 ### 交易模式
 
 Trading212 提供限价单支持，交易单数完全免费无限制。 值得一提的是，Trading212 效仿 M1 Finance，推出了 Pie 模式。该模式可以让你添加股票并赋予该股票一个百分比，并按照该 Pie 资金自动购买股票。股息所得也会自动按照百分比再购入股票（自动化 dividend reinvestment）。Pie 模式下也可以手动 rebalance，卖掉超出赋予百分比的股票，买入低于赋予百分比的股票。加上自动定期存入资金，该模式实现了懒人定投股票。
-
-分享一下我的主力 Pie: [https://www.trading212.com/pies/l71CzxRpjVwW84fwmvsyGMCW9fqy](https://www.trading212.com/pies/l71CzxRpjVwW84fwmvsyGMCW9fqy){:target="\_blank"}。
 
 ![Trading212 Pie](/assets/images/2020-01-01/trading212-pie.jpg){: .center-image}
 _Trading212 Pie 模式。_{:.image-caption}
@@ -178,17 +180,13 @@ Freetrade 是根正苗红的互联网 Fintech 企业，仅支持移动端 app �
 
 不过，反正大家盯盘也都用 Yahoo 吧？
 
-## 个人经验
+## 个人平台使用策略
 
-Trading212 ISA 的每年限额，目前我个人策略为通过 Revolut 持美股 🇺🇸，正好我也是 Revolut Metal，但是这意味着在每年的 Capital Gain Tax allowance 之后的利润需要上缴相应税率的资本利得税。Trading212 ISA 投资欧洲 🇪🇺 市场以及 Revolut 中不支持的美股。这一组合帮助我最大幅度利用了 ISA 免税额，同时规避了于英镑贬值带来的风险，未来也可以以美元灵活调节持仓。
+2021 年 6 月：主力使用 Trading212 ISA，达到当年上限后使用 Freetrade。
 
-虽然个人看好 Freetrade 的未来成长，但是由于它的交易模式，目前并没有通过该平台进行投资，而是参加了它的第五轮众筹。
-
-~~目前仍然在期待 Robin Hood 2020 年英国市场的启动。~~Robin Hood 宣布无限期推迟进入英国市场。
+个人看好 Freetrade 的未来成长，参加了它的第五轮众筹。
 
 ![Freetrade 众筹](/assets/images/2020-01-01/round5.jpg){: .center-image}
-
-Trading212 还有一个小彩蛋，可以通过 Visa/MasterCard 信用卡充值，不收手续费，并且也**不会被视为 Cash Advance**（亲测 Barclaycard 以及 Lloyds）。
 
 几点投资小建议：
 
@@ -199,19 +197,17 @@ Trading212 还有一个小彩蛋，可以通过 Visa/MasterCard 信用卡充值�
 
 ## 邀请链接
 
-这里是我的 Trading212 ISA 的 [邀请链接](https://www.trading212.com/invite/xG5f5){:target="\_blank"}，通过该链接**注册账户后**存入至少 £1，双方都可以获得价值最高 £100 的股票一只。P.S. 通过该链接注册**你仍然可以获得奖励**，但我已经达到邀请上限，不会再收到邀请奖励。
+这里是我的 Freetrade 的 [邀请链接](https://magic.freetrade.io/join/qiru/5937b19a)，赠送最高 £200（实际上一般不超过 £20）的股票一只。
 
-Freetrade 的 [邀请链接](https://magic.freetrade.io/join/qiru/5937b19a)，赠送最高 £200 的股票一只。
-
-Revolut 的 [邀请链接](https://revolut.com/referral/qiru4qk){:target="\_blank"}，开卡包邮，环球旅行必备。
+Trading212 ISA 的 [邀请链接](https://www.trading212.com/invite/xG5f5){:target="\_blank"}，通过该链接**注册账户后**存入至少 £1，双方都可以获得价值最高 £100 的股票一只（实际上一般不超过 £10）。P.S. 通过该链接注册**你仍然可以获得奖励**，但我已经达到邀请上限，不会再收到邀请奖励。
 
 插播一则相关性较低的邀请链接：
 
-Octopus Energy，英国最便宜的电力和天然气（tariff+standing charge）供应商之一，在 Midlands 地区比 Bulb 还便宜。100%可再生能源（能源来自于 Octopus 旗下的可再生能源发电设施，LSE:ORIT，目前股息率 3.8%），trustpilot 4.8/5 星好评，英国最著名消费者杂志 which? 推荐的能源供应商。在线账户管理界面特别友好，客服响应速度很快。通过 [邀请链接](https://share.octopus.energy/beige-bat-137){:target="\_blank"}一键快速 switch，双方都能得到 £50 credit。投资是开源，switch 到更便宜的供应商就是节流了。
+Octopus Energy，英国最便宜的电力和天然气（tariff+standing charge）供应商之一，在 Midlands 地区比 Bulb 还便宜。100%可再生能源（能源来自于 Octopus 旗下的可再生能源发电设施，LSE:ORIT，目前股息率 3.8%），trustpilot 4.8/5 星好评，英国最著名消费者杂志 which? 推荐的能源供应商。在线账户管理界面友好，客服响应速度快。通过 [邀请链接](https://share.octopus.energy/beige-bat-137){:target="\_blank"}一键快速 switch，双方都能得到 £50 credit。投资是开源，switch 到更便宜的供应商就是节流了。
 
 ---
 
-最后，祝大家 2020 💰 财运亨通。
+最后，祝大家💰 财运亨通。
 
 <style>
 .center-image {
